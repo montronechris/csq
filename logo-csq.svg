@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">
+  <!-- Esagoni sinistra -->
+  <polygon fill="#f59e0b" points="60,40 70,40 75,48.66 70,57.32 60,57.32 55,48.66"/>
+  <polygon fill="#f59e0b" points="45,60 55,60 60,68.66 55,77.32 45,77.32 40,68.66"/>
+  <polygon fill="#f59e0b" points="60,80 70,80 75,88.66 70,97.32 60,97.32 55,88.66"/>
+  
+  <!-- Testo CSQ -->
+  <text x="90" y="95" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#1e3a8a">CSQ</text>
+  
+  <!-- Esagoni destra -->
+  <polygon fill="#f59e0b" points="310,40 320,40 325,48.66 320,57.32 310,57.32 305,48.66"/>
+  <polygon fill="#f59e0b" points="325,60 335,60 340,68.66 335,77.32 325,77.32 320,68.66"/>
+  <polygon fill="#f59e0b" points="310,80 320,80 325,88.66 320,97.32 310,97.32 305,88.66"/>
+  
+  <!-- Scudo -->
+  <path fill="#f59e0b" d="M190,100 L210,100 L210,115 Q200,125 190,115 Z"/>
+</svg>
