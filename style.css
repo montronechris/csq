@@ -1,6 +1,3 @@
-/* ============================================
-   RESET & VARIABILI - TEMA VERDE CHIARO
-   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -8,19 +5,19 @@
 }
 
 :root {
-    --primary-dark: #065f46;
-    --primary-blue: #10b981;
-    --primary-light: #6ee7b7;
-    --accent: #34d399;
-    --accent-light: #6ee7b7;
-    --text-dark: #064e3b;
-    --text-gray: #374151;
-    --text-light: #6b7280;
-    --bg-light: #f0fdf4;
-    --bg-blue-light: #d1fae5;
-    --bg-blue-lighter: #ecfdf5;
+    --primary-dark: #1e3a8a;
+    --primary-blue: #1e40af;
+    --primary-light: #3b82f6;
+    --accent: #f59e0b;
+    --accent-light: #fbbf24;
+    --text-dark: #1e293b;
+    --text-gray: #64748b;
+    --text-light: #94a3b8;
+    --bg-light: #f0f4f8;
+    --bg-blue-light: #e8f0fe;
+    --bg-blue-lighter: #f5f8fc;
     --white: #ffffff;
-    --shadow: rgba(16, 185, 129, 0.1);
+    --shadow: rgba(0, 0, 0, 0.08);
 }
 
 body {
@@ -36,9 +33,7 @@ h1, h2, h3, h4 {
     line-height: 1.2;
 }
 
-/* ============================================
-   HEADER
-   ============================================ */
+/* Header */
 header {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
@@ -124,15 +119,13 @@ nav {
 .nav-cta:hover {
     background: var(--accent-light);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
 }
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
+/* Hero Section */
 .hero {
     margin-top: 80px;
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #34d399 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #2563eb 100%);
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -147,10 +140,10 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background:
-    radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(52, 211, 153, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 60% 80%, rgba(6, 95, 70, 0.4) 0%, transparent 50%);
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 60% 80%, rgba(30, 58, 138, 0.4) 0%, transparent 50%);
     opacity: 0.6;
 }
 
@@ -161,7 +154,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml, <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></svg>');
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></svg>');
     opacity: 0.3;
 }
 
@@ -217,7 +210,7 @@ nav {
     background: var(--accent-light);
     border-color: var(--accent-light);
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
 }
 
 .btn-secondary {
@@ -249,12 +242,10 @@ nav {
     box-shadow: 0 30px 60px rgba(0,0,0,0.3);
 }
 
-/* ============================================
-   STATS BAR
-   ============================================ */
+/* Stats Bar - Sfondo con gradiente blu chiaro */
 .stats-bar {
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 50%, #6ee7b7 100%);
-    padding: 80px 0 100px 0;
+    background: linear-gradient(135deg, #e8f0fe 0%, #dbeafe 50%, #bfdbfe 100%);
+    padding: 80px 0 100px 0; /* Aumentato padding bottom */
     position: relative;
     z-index: 10;
     border-bottom: 3px solid var(--primary-blue);
@@ -268,7 +259,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 10% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 10% 50%, rgba(30, 64, 175, 0.1) 0%, transparent 50%);
 }
 
 .stats-container {
@@ -303,14 +294,12 @@ nav {
     letter-spacing: 1px;
 }
 
-/* ============================================
-   ABOUT SECTION
-   ============================================ */
+/* About Section - Sfondo gradiente blu chiaro */
 .about {
-    background: linear-gradient(180deg, var(--bg-blue-lighter) 0%, #d1fae5 100%);
+    background: linear-gradient(180deg, var(--bg-blue-lighter) 0%, #e8f0fe 100%);
     position: relative;
     overflow: hidden;
-    padding: 120px 0;
+    padding: 120px 0; /* Aumentato padding */
 }
 
 .about::before {
@@ -320,7 +309,7 @@ nav {
     right: -100px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(30, 64, 175, 0.08) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -331,7 +320,7 @@ nav {
     left: -150px;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -351,7 +340,7 @@ nav {
 .about-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 25px 50px rgba(30, 64, 175, 0.15);
 }
 
 .about-image::before {
@@ -395,15 +384,15 @@ nav {
     padding: 22px;
     background: var(--white);
     border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.08);
-    border: 1px solid rgba(16, 185, 129, 0.08);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.08);
+    border: 1px solid rgba(30, 64, 175, 0.08);
     transition: all 0.3s;
 }
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.12);
-    border-color: rgba(16, 185, 129, 0.15);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.12);
+    border-color: rgba(30, 64, 175, 0.15);
 }
 
 .feature-icon {
@@ -418,7 +407,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     flex-shrink: 0;
-    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.2);
 }
 
 .feature-text h4 {
@@ -433,13 +422,11 @@ nav {
     margin: 0;
 }
 
-/* ============================================
-   SERVICES SECTION
-   ============================================ */
+/* Services Section - Sfondo gradiente blu-grigio */
 .services {
-    background: linear-gradient(180deg, #d1fae5 0%, #a7f3d0 30%, var(--white) 100%);
+    background: linear-gradient(180deg, #e8f0fe 0%, #dbeafe 30%, var(--white) 100%);
     position: relative;
-    padding: 120px 0;
+    padding: 120px 0; /* Aumentato padding */
 }
 
 .services::before {
@@ -449,14 +436,14 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background:
-    radial-gradient(circle at 20% 30%, rgba(52, 211, 153, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(30, 64, 175, 0.08) 0%, transparent 50%);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 80px; /* Aumentato da 70px */
 }
 
 .services-grid {
@@ -470,15 +457,15 @@ nav {
     background: var(--white);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.1);
+    box-shadow: 0 10px 40px rgba(30, 64, 175, 0.1);
     transition: all 0.4s;
-    border: 1px solid rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(30, 64, 175, 0.1);
 }
 
 .service-card:hover {
     transform: translateY(-15px);
-    box-shadow: 0 25px 60px rgba(16, 185, 129, 0.18);
-    border-color: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 25px 60px rgba(30, 64, 175, 0.18);
+    border-color: rgba(30, 64, 175, 0.2);
 }
 
 .service-image {
@@ -494,7 +481,7 @@ nav {
     left: 0;
     right: 0;
     height: 60%;
-    background: linear-gradient(to top, rgba(16, 185, 129, 0.4), transparent);
+    background: linear-gradient(to top, rgba(30, 64, 175, 0.4), transparent);
 }
 
 .service-image img {
@@ -523,7 +510,7 @@ nav {
     color: var(--white);
     font-size: 2rem;
     margin-bottom: 25px;
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.25);
+    box-shadow: 0 10px 25px rgba(30, 64, 175, 0.25);
 }
 
 .service-content h3 {
@@ -553,15 +540,13 @@ nav {
     gap: 12px;
 }
 
-/* ============================================
-   WHY CHOOSE US
-   ============================================ */
+/* Why Choose Us - Sfondo gradiente blu scuro */
 .why-us {
-    background: linear-gradient(135deg, #064e3b 0%, var(--primary-dark) 40%, var(--primary-blue) 100%);
+    background: linear-gradient(135deg, #0f172a 0%, var(--primary-dark) 40%, var(--primary-blue) 100%);
     color: var(--white);
     position: relative;
     overflow: hidden;
-    padding: 120px 0;
+    padding: 120px 0; /* Aumentato padding */
 }
 
 .why-us::before {
@@ -571,7 +556,7 @@ nav {
     right: -20%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.1) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 60%);
     border-radius: 50%;
 }
 
@@ -582,7 +567,7 @@ nav {
     left: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
     border-radius: 50%;
 }
 
@@ -636,13 +621,11 @@ nav {
     line-height: 1.7;
 }
 
-/* ============================================
-   CONTACT SECTION
-   ============================================ */
+/* Contact Section - Sfondo gradiente blu chiaro */
 .contact {
-    background: linear-gradient(180deg, var(--white) 0%, #d1fae5 100%);
+    background: linear-gradient(180deg, var(--white) 0%, #e8f0fe 100%);
     position: relative;
-    padding: 120px 0;
+    padding: 120px 0; /* Aumentato padding */
 }
 
 .contact::before {
@@ -652,12 +635,13 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 60%);
+    background: radial-gradient(circle at 50% 0%, rgba(30, 64, 175, 0.05) 0%, transparent 60%);
 }
 
 .contact .section-header {
-    margin-bottom: 80px;
+    margin-bottom: 80px; /* Più spazio sotto l'header */
 }
+
 
 .contact-wrapper {
     display: grid;
@@ -666,8 +650,8 @@ nav {
     background: var(--white);
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 25px 70px rgba(16, 185, 129, 0.12);
-    border: 1px solid rgba(16, 185, 129, 0.1);
+    box-shadow: 0 25px 70px rgba(30, 64, 175, 0.12);
+    border: 1px solid rgba(30, 64, 175, 0.1);
     position: relative;
 }
 
@@ -792,7 +776,7 @@ nav {
     outline: none;
     border-color: var(--primary-blue);
     background: var(--white);
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+    box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.1);
 }
 
 .form-group textarea {
@@ -843,20 +827,18 @@ nav {
     transition: all 0.3s;
     width: 100%;
     font-family: inherit;
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.25);
 }
 
 .btn-submit:hover {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, #065f46 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #1e3a8a 100%);
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.35);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.35);
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/* Footer - Sfondo gradiente blu scuro */
 footer {
-    background: linear-gradient(135deg, #064e3b 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, #0f172a 0%, var(--primary-dark) 100%);
     color: var(--white);
     padding: 80px 0 30px;
     position: relative;
@@ -870,7 +852,7 @@ footer::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
 }
 
 .footer-grid {
@@ -918,7 +900,7 @@ footer::before {
 .footer-social a:hover {
     background: var(--accent);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(52, 211, 153, 0.3);
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
 }
 
 .footer-column h4 {
@@ -987,9 +969,7 @@ footer::before {
     color: var(--accent);
 }
 
-/* ============================================
-   COOKIE BANNER
-   ============================================ */
+/* Cookie Banner */
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -1054,7 +1034,7 @@ footer::before {
 
 .btn-accept:hover {
     background: var(--accent-light);
-    box-shadow: 0 10px 25px rgba(52, 211, 153, 0.4);
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
     transform: translateY(-2px);
 }
 
@@ -1070,13 +1050,12 @@ footer::before {
     transform: translateY(-2px);
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* Responsive */
 @media (max-width: 1024px) {
     .stats-bar {
         padding: 60px 0 80px 0;
     }
+    
     .about,
     .services,
     .why-us,
@@ -1095,7 +1074,7 @@ footer::before {
     .stats-container {
         display: flex;
         justify-content: center;
-        gap: 120px;
+        gap: 120px; /* Aumentato gap */
         position: relative;
     }
 
@@ -1121,6 +1100,7 @@ footer::before {
     .header-left {
         gap: 12px;
     }
+
     .header-brand-text {
         font-size: 0.9rem;
     }
@@ -1182,12 +1162,9 @@ footer::before {
         font-size: 2.5rem;
     }
 }
-
-/* ============================================
-   SEZIONE COS'È LA CONSULENZA ISO
-   ============================================ */
+/* Sezione Cos'è la Consulenza ISO - Migliorata */
 .consulenza-intro {
-    background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 50%, #a7f3d0 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
     position: relative;
     overflow: hidden;
     padding: 120px 0;
@@ -1200,7 +1177,7 @@ footer::before {
     right: -200px;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(30, 64, 175, 0.08) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -1211,7 +1188,7 @@ footer::before {
     left: -150px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.06) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -1246,7 +1223,7 @@ footer::before {
 .consulenza-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 30px 60px rgba(30, 64, 175, 0.15);
     border: 8px solid var(--white);
 }
 
@@ -1274,8 +1251,8 @@ footer::before {
     background: var(--white);
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
-    border: 2px solid rgba(16, 185, 129, 0.08);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.08);
     transition: all 0.3s;
     display: flex;
     align-items: flex-start;
@@ -1284,8 +1261,8 @@ footer::before {
 
 .consulenza-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
-    border-color: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 20px 40px rgba(30, 64, 175, 0.15);
+    border-color: rgba(30, 64, 175, 0.2);
 }
 
 .consulenza-card-icon {
@@ -1298,7 +1275,7 @@ footer::before {
     justify-content: center;
     color: var(--white);
     flex-shrink: 0;
-    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
 }
 
 .consulenza-card h4 {
@@ -1315,11 +1292,9 @@ footer::before {
     line-height: 1.6;
 }
 
-/* ============================================
-   SEZIONE CTA CON FORM
-   ============================================ */
+/* Sezione CTA con Form - Stile migliorato */
 .cta-form-section {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #34d399 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #2563eb 100%);
     padding: 120px 0;
     position: relative;
     overflow: hidden;
@@ -1332,7 +1307,7 @@ footer::before {
     right: -30%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.15) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 60%);
     border-radius: 50%;
 }
 
@@ -1343,7 +1318,7 @@ footer::before {
     left: -20%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 60%);
     border-radius: 50%;
 }
 
@@ -1380,15 +1355,17 @@ footer::before {
     margin: 0 auto;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .consulenza-grid {
         grid-template-columns: 1fr;
         gap: 60px;
     }
+    
     .consulenza-content h2 {
         font-size: 2.2rem;
     }
-
+    
     .consulenza-features {
         grid-template-columns: 1fr;
     }
@@ -1398,22 +1375,20 @@ footer::before {
     .consulenza-content h2 {
         font-size: 1.8rem;
     }
+    
     .consulenza-image {
         order: -1;
     }
-
+    
     .cta-form-container {
         padding: 40px 25px;
     }
-
+    
     .cta-form-header h2 {
         font-size: 2rem;
     }
 }
-
-/* ============================================
-   CTA HEADER - TITOLI MOLTO GRANDI
-   ============================================ */
+/* CTA Header - Titoli MOLTO grandi */
 .cta-form-header {
     text-align: center;
     margin-bottom: 70px;
@@ -1426,7 +1401,7 @@ footer::before {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 25px;
-    color: #6ee7b7;
+    color: #fbbf24;
 }
 
 .cta-form-header h2 {
@@ -1446,6 +1421,7 @@ footer::before {
     line-height: 1.7;
 }
 
+/* Anche per altre sezioni simili */
 .section-header .section-tag {
     font-size: 1.3rem !important;
     font-weight: 800 !important;
@@ -1457,18 +1433,20 @@ footer::before {
     font-weight: 800 !important;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .cta-form-header h2 {
         font-size: 3.5rem !important;
     }
+    
     .cta-form-header .section-tag {
         font-size: 1.3rem !important;
     }
-
+    
     .cta-form-header p {
         font-size: 1.3rem !important;
     }
-
+    
     .section-header .section-title {
         font-size: 2.8rem !important;
     }
@@ -1478,22 +1456,20 @@ footer::before {
     .cta-form-header h2 {
         font-size: 2.5rem !important;
     }
+    
     .cta-form-header .section-tag {
         font-size: 1rem !important;
     }
-
+    
     .cta-form-header p {
         font-size: 1.1rem !important;
     }
-
+    
     .section-header .section-title {
         font-size: 2.2rem !important;
     }
 }
-
-/* ============================================
-   TESTO INTRODUTTIVO - VERSIONE GRAFICA
-   ============================================ */
+/* Testo introduttivo - Versione Grafica */
 .consulenza-content > p {
     font-size: 1.25rem !important;
     line-height: 1.9;
@@ -1504,14 +1480,14 @@ footer::before {
     background: var(--white);
     border-radius: 16px;
     border-left: 5px solid var(--primary-blue);
-    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.08);
+    box-shadow: 0 5px 20px rgba(30, 64, 175, 0.08);
     position: relative;
     transition: all 0.3s;
 }
 
 .consulenza-content > p:hover {
     transform: translateX(8px);
-    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 8px 30px rgba(30, 64, 175, 0.15);
     border-left-width: 8px;
 }
 
@@ -1527,13 +1503,14 @@ footer::before {
     line-height: 1;
 }
 
+/* Alternativa: stile a card evidenziate */
 .consulenza-text-block {
-    background: linear-gradient(135deg, var(--white) 0%, #f0fdf4 100%);
+    background: linear-gradient(135deg, var(--white) 0%, #f8fafc 100%);
     padding: 35px 40px;
     border-radius: 20px;
     margin-bottom: 30px;
-    border: 2px solid rgba(16, 185, 129, 0.1);
-    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.1);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -1555,7 +1532,7 @@ footer::before {
     right: -50px;
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -1573,6 +1550,7 @@ footer::before {
     font-weight: 700;
 }
 
+/* Highlight box per frasi chiave */
 .consulenza-highlight {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
     color: var(--white);
@@ -1582,7 +1560,7 @@ footer::before {
     font-weight: 600;
     text-align: center;
     margin: 40px 0;
-    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -1603,6 +1581,7 @@ footer::before {
     margin: 0;
 }
 
+/* Icone decorative prima dei paragrafi */
 .consulenza-content > p:nth-of-type(1)::before {
     content: '🎯';
     position: absolute;
@@ -1630,21 +1609,19 @@ footer::before {
     opacity: 0.3;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .consulenza-content > p,
     .consulenza-text-block p {
         font-size: 1.1rem !important;
         padding: 20px;
     }
+    
     .consulenza-highlight {
         font-size: 1.2rem !important;
         padding: 25px;
     }
 }
-
-/* ============================================
-   INTRO HIGHLIGHT CARD
-   ============================================ */
 .intro-highlight-card {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
     color: var(--white);
@@ -1655,13 +1632,13 @@ footer::before {
     font-weight: 500;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.3);
     margin-bottom: 30px;
     border: 1px solid rgba(255,255,255,0.1);
 }
 
 .intro-highlight-card strong {
-    color: var(--accent);
+    color: var(--accent); /* Giallo per risaltare */
     font-weight: 700;
 }
 
@@ -1675,31 +1652,33 @@ footer::before {
     font-family: Georgia, serif;
     line-height: 1;
 }
-
+/* Colonna destra con immagine e card */
 .consulenza-right-column {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
+/* Card in alto */
 .info-card-top {
-    background: linear-gradient(135deg, var(--white) 0%, #f0fdf4 100%);
+    background: linear-gradient(135deg, var(--white) 0%, #f8fafc 100%);
     padding: 28px 30px;
     border-radius: 16px;
     display: flex;
     align-items: center;
     gap: 18px;
-    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
-    border: 2px solid rgba(16, 185, 129, 0.08);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.08);
     transition: all 0.3s;
 }
 
 .info-card-top:hover {
     transform: translateX(-8px);
-    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.15);
-    border-color: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.15);
+    border-color: rgba(30, 64, 175, 0.2);
 }
 
+/* Card in basso */
 .info-card-bottom {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
     padding: 28px 30px;
@@ -1707,15 +1686,16 @@ footer::before {
     display: flex;
     align-items: center;
     gap: 18px;
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.3);
     transition: all 0.3s;
 }
 
 .info-card-bottom:hover {
     transform: translateX(-8px);
-    box-shadow: 0 20px 45px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 20px 45px rgba(30, 64, 175, 0.4);
 }
 
+/* Icone delle card */
 .info-card-icon {
     width: 55px;
     height: 55px;
@@ -1729,7 +1709,7 @@ footer::before {
 .info-card-top .info-card-icon {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
     color: var(--white);
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.25);
 }
 
 .info-card-bottom .info-card-icon {
@@ -1767,6 +1747,7 @@ footer::before {
     color: rgba(255,255,255,0.9);
 }
 
+/* Immagine con badge */
 .consulenza-image {
     position: relative;
 }
@@ -1774,7 +1755,7 @@ footer::before {
 .consulenza-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 30px 60px rgba(30, 64, 175, 0.2);
     border: 8px solid var(--white);
 }
 
@@ -1802,65 +1783,71 @@ footer::before {
     color: var(--white);
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .consulenza-right-column {
         gap: 20px;
-    }
+    }   
 }
 
+/* Colonna destra con immagine e card - Spaziatura aumentata */
 .consulenza-right-column {
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 45px; /* Aumentato da 25px a 45px per più spazio */
 }
 
+/* Card in alto - Più padding e margine */
 .info-card-top {
-    background: linear-gradient(135deg, var(--white) 0%, #f0fdf4 100%);
-    padding: 35px 40px;
-    border-radius: 20px;
+    background: linear-gradient(135deg, var(--white) 0%, #f8fafc 100%);
+    padding: 35px 40px; /* Aumentato padding interno */
+    border-radius: 20px; /* Bordi più arrotondati */
     display: flex;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.08);
-    border: 2px solid rgba(16, 185, 129, 0.05);
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.05);
     transition: all 0.3s;
-    margin-bottom: 0;
+    margin-bottom: 0; 
 }
 
 .info-card-top:hover {
     transform: translateX(-8px);
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.12);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.12);
 }
 
+/* Card in basso - Più padding e margine */
 .info-card-bottom {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
-    padding: 35px 40px;
-    border-radius: 20px;
+    padding: 35px 40px; /* Aumentato padding interno */
+    border-radius: 20px; /* Bordi più arrotondati */
     display: flex;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 20px 45px rgba(16, 185, 129, 0.35);
+    box-shadow: 0 20px 45px rgba(30, 64, 175, 0.35);
     transition: all 0.3s;
     margin-top: 0;
 }
 
 .info-card-bottom:hover {
     transform: translateX(-8px);
-    box-shadow: 0 25px 55px rgba(16, 185, 129, 0.45);
+    box-shadow: 0 25px 55px rgba(30, 64, 175, 0.45);
 }
 
+/* Immagine con margine aggiuntivo per staccarsi dai badge */
 .consulenza-image {
     position: relative;
-    margin: 15px 0;
+    margin: 15px 0; /* Margine verticale aggiunto per separare i badge dalle card */
 }
 
 .consulenza-image img {
     width: 100%;
     border-radius: 24px;
-    box-shadow: 0 30px 70px rgba(16, 185, 129, 0.25);
-    border: 10px solid var(--white);
+    box-shadow: 0 30px 70px rgba(30, 64, 175, 0.25);
+    border: 10px solid var(--white); /* Bordo bianco più spesso */
 }
 
+/* Badge posizionati per non toccare le card */
 .image-badge-top {
     top: -15px;
     right: 30px;
@@ -1870,7 +1857,7 @@ footer::before {
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 700;
-    box-shadow: 0 8px 20px rgba(52, 211, 153, 0.4);
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
     z-index: 5;
 }
 
@@ -1883,31 +1870,30 @@ footer::before {
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 700;
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.4);
     z-index: 5;
 }
 
+/* Responsive adjustments */
 @media (max-width: 1024px) {
     .consulenza-right-column {
         gap: 35px;
     }
+    
     .info-card-top,
     .info-card-bottom {
         padding: 25px;
     }
 }
-
-/* ============================================
-   TITOLI SEZIONI - MOLTO PIÙ VISIBILI
-   ============================================ */
+/* Titoli sezioni - Molto più visibili */
 .section-header {
     text-align: center;
     margin-bottom: 90px;
     padding: 50px 40px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(110, 231, 183, 0.08) 100%);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(59, 130, 246, 0.08) 100%);
     border-radius: 24px;
-    border: 2px solid rgba(16, 185, 129, 0.1);
-    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.1);
+    box-shadow: 0 10px 40px rgba(30, 64, 175, 0.08);
     position: relative;
     overflow: hidden;
 }
@@ -1952,7 +1938,7 @@ footer::before {
     color: var(--primary-dark);
     margin-bottom: 20px;
     line-height: 1.1;
-    text-shadow: 0 2px 10px rgba(16, 185, 129, 0.15);
+    text-shadow: 0 2px 10px rgba(30, 64, 175, 0.15);
     letter-spacing: -1px;
 }
 
@@ -1965,6 +1951,7 @@ footer::before {
     font-weight: 500;
 }
 
+/* Per la sezione Why Us (sfondo scuro) */
 .why-us .section-header {
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -1988,14 +1975,16 @@ footer::before {
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .section-header {
         padding: 40px 30px;
     }
+    
     .section-title {
         font-size: 3rem !important;
     }
-
+    
     .section-subtitle {
         font-size: 1.2rem !important;
     }
@@ -2006,40 +1995,38 @@ footer::before {
         padding: 30px 20px;
         margin-bottom: 60px;
     }
+    
     .section-tag {
         font-size: 1.1rem !important;
         letter-spacing: 2px;
     }
-
+    
     .section-title {
         font-size: 2.2rem !important;
     }
-
+    
     .section-subtitle {
         font-size: 1.1rem !important;
     }
 }
-
-/* ============================================
-   TESTO EVIDENZIATO - SENZA BOX, FONT PIÙ GRANDE
-   ============================================ */
+/* Testo evidenziato - Senza box, font più grande */
 .intro-highlight-card {
-    background: transparent;
+    background: transparent; /* Rimosso sfondo blu */
     color: var(--text-dark);
-    padding: 30px 0;
-    font-size: 1.8rem;
+    padding: 30px 0; /* Padding solo verticale, niente laterale */
+    font-size: 1.8rem; /* Aumentato da 1.35rem a 1.8rem */
     line-height: 1.7;
     font-weight: 600;
     position: relative;
     margin-bottom: 40px;
-    border: none;
-    box-shadow: none;
+    border: none; /* Rimosso bordo */
+    box-shadow: none; /* Rimossa ombra */
 }
 
 .intro-highlight-card strong {
-    color: var(--accent);
+    color: var(--accent); /* Giallo/arancio per risaltare */
     font-weight: 800;
-    font-size: 1.9rem;
+    font-size: 1.9rem; /* Leggermente più grande del resto */
 }
 
 .intro-highlight-card::before {
@@ -2054,10 +2041,12 @@ footer::before {
     line-height: 1;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .intro-highlight-card {
         font-size: 1.5rem;
     }
+    
     .intro-highlight-card strong {
         font-size: 1.6rem;
     }
@@ -2068,14 +2057,12 @@ footer::before {
         font-size: 1.3rem;
         padding: 20px 0;
     }
+    
     .intro-highlight-card strong {
         font-size: 1.4rem;
     }
 }
-
-/* ============================================
-   SEZIONE HEADER - RIMOZIONE BOX
-   ============================================ */
+/* Rimuovi il box di sfondo dall'header della sezione */
 .section-header {
     background: transparent;
     border: none;
@@ -2086,11 +2073,12 @@ footer::before {
 
 .section-header::before,
 .section-header::after {
-    display: none;
+    display: none; /* Rimuove linee decorative se presenti */
 }
 
+/* Sottotitolo molto più grande e visibile */
 .section-subtitle {
-    font-size: 1.85rem !important;
+    font-size: 1.85rem !important; /* Testo ingrandito */
     font-weight: 600 !important;
     color: var(--text-dark);
     line-height: 1.6;
@@ -2099,11 +2087,13 @@ footer::before {
     letter-spacing: -0.3px;
 }
 
+/* Adattamento per sezioni a sfondo scuro */
 .why-us .section-subtitle {
     color: rgba(255, 255, 255, 0.95);
     font-weight: 600;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .section-subtitle {
         font-size: 1.6rem !important;
@@ -2118,10 +2108,35 @@ footer::before {
         margin-bottom: 60px;
     }
 }
+/* Sottotitolo Hero - Grande e pulito */
+.hero-text p {
+    font-size: 1.85rem !important; /* Testo ingrandito */
+    font-weight: 500 !important;
+    color: rgba(255,255,255,0.95) !important;
+    line-height: 1.6 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+    letter-spacing: -0.2px;
+}
 
-/* ============================================
-   SOTTOTITOLO HERO
-   ============================================ */
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-text p {
+        font-size: 1.55rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text p {
+        font-size: 1.3rem !important;
+        margin-bottom: 2rem;
+    }
+}
+/* Hero Text - Più largo e visibile */
 .hero-text p {
     font-size: 1.85rem !important;
     font-weight: 500 !important;
@@ -2131,12 +2146,13 @@ footer::before {
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-    max-width: 1200px !important;
+    max-width: 1200px !important; /* Aumentato da 900px a 1200px */
     margin: 0 auto 2.5rem auto;
     letter-spacing: -0.2px;
     text-align: center;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .hero-text p {
         font-size: 1.55rem !important;
@@ -2151,12 +2167,9 @@ footer::before {
         max-width: 100% !important;
     }
 }
-
-/* ============================================
-   HEADER - DESIGN GRAFICO AVANZATO
-   ============================================ */
+/* Header - Design Grafico Avanzato */
 header {
-    background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(240,253,244,0.95) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(248,250,252,0.95) 100%);
     backdrop-filter: blur(20px) saturate(180%);
     position: fixed;
     width: 100%;
@@ -2186,9 +2199,9 @@ header::before {
 
 header.scrolled {
     background: rgba(255, 255, 255, 0.99);
-    box-shadow: 0 8px 50px rgba(16, 185, 129, 0.15),
-    0 4px 20px rgba(52, 211, 153, 0.1);
-    border-bottom: 3px solid rgba(16, 185, 129, 0.1);
+    box-shadow: 0 8px 50px rgba(30, 64, 175, 0.15), 
+                0 4px 20px rgba(245, 158, 11, 0.1);
+    border-bottom: 3px solid rgba(30, 64, 175, 0.1);
 }
 
 .header-container {
@@ -2205,6 +2218,7 @@ nav {
     position: relative;
 }
 
+/* Logo con effetto grafico */
 .header-left {
     display: flex;
     align-items: center;
@@ -2218,9 +2232,9 @@ nav {
     text-decoration: none;
     position: relative;
     padding: 10px 20px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(52, 211, 153, 0.05));
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(245, 158, 11, 0.05));
     border-radius: 16px;
-    border: 2px solid rgba(16, 185, 129, 0.1);
+    border: 2px solid rgba(30, 64, 175, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -2240,7 +2254,7 @@ nav {
 
 .header-brand:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.2);
     border-color: transparent;
 }
 
@@ -2252,7 +2266,7 @@ nav {
     height: 55px;
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.15));
+    filter: drop-shadow(0 4px 12px rgba(30, 64, 175, 0.15));
     transition: transform 0.4s;
 }
 
@@ -2290,12 +2304,13 @@ nav {
 }
 
 .header-brand-text span {
-    background: linear-gradient(135deg, var(--accent) 0%, #34d399 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, #f97316 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
+/* Navigation Links con effetti grafici */
 .nav-links {
     display: flex;
     list-style: none;
@@ -2328,7 +2343,7 @@ nav {
     background: linear-gradient(90deg, var(--primary-blue), var(--accent));
     border-radius: 4px;
     transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 2px 10px rgba(30, 64, 175, 0.3);
 }
 
 .nav-links a::after {
@@ -2338,7 +2353,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(52, 211, 153, 0.05));
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(245, 158, 11, 0.05));
     border-radius: 8px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -2358,8 +2373,9 @@ nav {
     opacity: 1;
 }
 
+/* CTA Button Grafico */
 .nav-cta {
-    background: linear-gradient(135deg, var(--accent) 0%, #34d399 50%, var(--accent-light) 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, #f97316 50%, var(--accent-light) 100%);
     background-size: 200% 200%;
     color: var(--white) !important;
     padding: 16px 38px;
@@ -2367,8 +2383,8 @@ nav {
     font-weight: 800;
     font-size: 1rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4),
-    0 4px 12px rgba(52, 211, 153, 0.3);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4),
+                0 4px 12px rgba(249, 115, 22, 0.3);
     border: 2px solid rgba(255,255,255,0.2);
     position: relative;
     overflow: hidden;
@@ -2397,8 +2413,8 @@ nav {
 
 .nav-cta:hover {
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(52, 211, 153, 0.5),
-    0 8px 20px rgba(52, 211, 153, 0.4);
+    box-shadow: 0 15px 40px rgba(245, 158, 11, 0.5),
+                0 8px 20px rgba(249, 115, 22, 0.4);
     border-color: rgba(255,255,255,0.4);
     animation-play-state: paused;
 }
@@ -2407,6 +2423,7 @@ nav {
     left: 100%;
 }
 
+/* Elementi decorativi */
 .header-decoration {
     position: absolute;
     top: 50%;
@@ -2414,7 +2431,7 @@ nav {
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(52, 211, 153, 0.1));
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(245, 158, 11, 0.1));
     border-radius: 50%;
     pointer-events: none;
     opacity: 0;
@@ -2425,6 +2442,7 @@ nav {
     opacity: 1;
 }
 
+/* Mobile Menu Toggle Grafico */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -2434,13 +2452,13 @@ nav {
     cursor: pointer;
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
     transition: all 0.3s;
 }
 
 .mobile-menu-toggle:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
 }
 
 .mobile-menu-toggle span {
@@ -2451,10 +2469,12 @@ nav {
     transition: all 0.3s;
 }
 
+/* Responsive */
 @media (max-width: 1200px) {
     .header-container {
         padding: 0 35px;
     }
+    
     .nav-links {
         gap: 2.5rem;
     }
@@ -2464,10 +2484,11 @@ nav {
     .header-container {
         padding: 0 25px;
     }
+    
     .nav-links {
         gap: 2rem;
     }
-
+    
     .header-brand-text {
         font-size: 1.5rem;
     }
@@ -2477,37 +2498,38 @@ nav {
     .header-container {
         padding: 0 20px;
     }
+    
     nav {
         height: 80px;
     }
-
+    
     .header-brand {
         padding: 8px 15px;
     }
-
+    
     .header-brand img {
         height: 45px;
     }
-
+    
     .header-brand-text {
         font-size: 1.2rem;
     }
-
+    
     .mobile-menu-toggle {
         display: flex;
     }
-
+    
     .nav-links {
         position: fixed;
         top: 80px;
         left: 0;
         right: 0;
-        background: linear-gradient(180deg, rgba(255,255,255,0.99) 0%, rgba(240,253,244,0.99) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,0.99) 0%, rgba(248,250,252,0.99) 100%);
         backdrop-filter: blur(20px);
         flex-direction: column;
         padding: 50px 30px;
         gap: 1.5rem;
-        box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2);
+        box-shadow: 0 20px 60px rgba(30, 64, 175, 0.2);
         transform: translateY(-150%);
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 999;
@@ -2515,34 +2537,31 @@ nav {
         border-image: linear-gradient(90deg, var(--primary-blue), var(--accent));
         border-image-slice: 1;
     }
-
+    
     .nav-links.active {
         transform: translateY(0);
     }
-
+    
     .nav-links a {
         width: 100%;
         text-align: center;
         padding: 18px;
         font-size: 1.2rem;
-        background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(52, 211, 153, 0.05));
+        background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(245, 158, 11, 0.05));
         border-radius: 12px;
     }
-
+    
     .nav-cta {
         width: 100%;
         margin-top: 15px;
         padding: 18px;
     }
 }
-
-/* ============================================
-   CTA BUTTON - TESTO CENTRATO
-   ============================================ */
+/* CTA Button - Testo perfettamente centrato */
 .nav-cta {
-    background: linear-gradient(135deg, #34d399 0%, #6ee7b7 50%, var(--accent) 100%);
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #f59e0b 100%);
     color: var(--white) !important;
-    padding: 16px 50px;
+    padding: 16px 50px; /* ✅ Padding simmetrico */
     border-radius: 16px;
     font-weight: 700;
     font-size: 1rem;
@@ -2551,16 +2570,20 @@ nav {
     overflow: hidden;
     border: none;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    
+    /* ✅ FORZA LA CENTRATURA */
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 0.4px;
-    min-width: 180px;
+    align-items: center;       /* Centra verticalmente */
+    justify-content: center;   /* Centra orizzontalmente */
+    text-align: center;        /* Centra il testo */
+    
+    white-space: nowrap;       /* Impedisce al testo di andare a capo */
+    letter-spacing: 0.4px;     /* Leggero spazio tra le lettere per eleganza */
+    min-width: 180px;          /* Larghezza minima fissa */
     box-sizing: border-box;
 }
 
+/* Glow Effect */
 .nav-cta::before {
     content: '';
     position: absolute;
@@ -2568,7 +2591,7 @@ nav {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, #34d399, #6ee7b7, var(--accent));
+    background: linear-gradient(135deg, #f97316, #fb923c, #f59e0b);
     border-radius: 18px;
     z-index: -1;
     opacity: 0.6;
@@ -2576,6 +2599,7 @@ nav {
     transition: opacity 0.4s, filter 0.4s;
 }
 
+/* Shine Effect */
 .nav-cta::after {
     content: '';
     position: absolute;
@@ -2587,10 +2611,11 @@ nav {
     transition: left 0.6s;
 }
 
+/* Hover States */
 .nav-cta:hover {
     transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 12px 30px rgba(52, 211, 153, 0.5),
-    0 6px 15px rgba(110, 231, 183, 0.4);
+    box-shadow: 0 12px 30px rgba(249, 115, 22, 0.5),
+                0 6px 15px rgba(251, 146, 60, 0.4);
 }
 
 .nav-cta:hover::before {
@@ -2602,6 +2627,7 @@ nav {
     left: 100%;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .nav-cta {
         padding: 14px 45px;
@@ -2609,14 +2635,25 @@ nav {
         font-size: 0.95rem;
     }
 }
-
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Fallback se JS fallisce */
 }
-
-/* ============================================
-   ABOUT INTRO GRID
-   ============================================ */
+/* Smooth scroll nativo - Solo desktop */
+@media (min-width: 1025px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Migliora la fluidità dello scroll */
+    body {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+html {
+    scroll-behavior: auto; /* ✅ Disabilita il nativo, usiamo il nostro custom */
+}
 .about-intro-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2625,10 +2662,10 @@ html {
 }
 
 .intro-card {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(52, 211, 153, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
     padding: 35px;
     border-radius: 20px;
-    border: 2px solid rgba(16, 185, 129, 0.1);
+    border: 2px solid rgba(30, 64, 175, 0.1);
     transition: all 0.4s;
     position: relative;
     overflow: hidden;
@@ -2648,8 +2685,8 @@ html {
 
 .intro-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.15);
-    border-color: rgba(16, 185, 129, 0.2);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.15);
+    border-color: rgba(30, 64, 175, 0.2);
 }
 
 .intro-card:hover::before {
@@ -2666,7 +2703,7 @@ html {
     justify-content: center;
     color: white;
     margin-bottom: 20px;
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
 }
 
 .intro-card h3 {
@@ -2688,10 +2725,7 @@ html {
         grid-template-columns: 1fr;
     }
 }
-
-/* ============================================
-   LAYOUT AVANZATO ABOUT
-   ============================================ */
+/* Layout avanzato per sezione About */
 .about-grid-enhanced {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -2705,6 +2739,7 @@ html {
     gap: 25px;
 }
 
+/* Card in alto */
 .about-top-card {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light) 100%);
     padding: 25px 30px;
@@ -2712,7 +2747,7 @@ html {
     display: flex;
     align-items: center;
     gap: 18px;
-    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.2);
     color: white;
     transition: transform 0.3s;
 }
@@ -2744,11 +2779,12 @@ html {
     margin: 0;
 }
 
+/* Immagine con badge */
 .about-image {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.15);
 }
 
 .about-image img {
@@ -2765,7 +2801,7 @@ html {
     padding: 15px 25px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(52, 211, 153, 0.4);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
     color: white;
 }
 
@@ -2781,6 +2817,7 @@ html {
     font-weight: 600;
 }
 
+/* Card statistiche in basso */
 .about-bottom-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2794,26 +2831,26 @@ html {
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.08);
-    border: 2px solid rgba(16, 185, 129, 0.05);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.05);
     transition: all 0.3s;
 }
 
 .bottom-stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(16, 185, 129, 0.12);
+    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.12);
 }
 
 .stat-icon {
     width: 58px;
     height: 58px;
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
 }
 
 .stat-content {
@@ -2834,11 +2871,13 @@ html {
     font-weight: 600;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .about-grid-enhanced {
         grid-template-columns: 1fr;
         gap: 60px;
     }
+    
     .about-left-column {
         order: -1;
     }
@@ -2849,11 +2888,11 @@ html {
         flex-direction: column;
         text-align: center;
     }
+    
     .about-bottom-cards {
         grid-template-columns: 1fr;
     }
 }
-
 .stat-icon svg {
     width: 28px;
     height: 28px;
@@ -2863,7 +2902,7 @@ html {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
-
+/* Contenitore delle card in basso */
 .about-bottom-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2871,6 +2910,7 @@ html {
     margin-top: 20px;
 }
 
+/* Stile della singola card */
 .bottom-stat-card {
     background: var(--white);
     padding: 20px;
@@ -2878,30 +2918,32 @@ html {
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.08);
-    border: 2px solid rgba(16, 185, 129, 0.05);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.08);
+    border: 2px solid rgba(30, 64, 175, 0.05);
     transition: all 0.3s;
 }
 
 .bottom-stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(16, 185, 129, 0.12);
-    border-color: rgba(16, 185, 129, 0.15);
+    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.12);
+    border-color: rgba(30, 64, 175, 0.15);
 }
 
+/* Stile dell'icona (Quadrato blu sfumato) */
 .stat-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.25);
-    color: white;
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.25);
+    color: white; /* L'icona SVG eredita questo colore */
 }
 
+/* Contenuto testo della card */
 .stat-content {
     display: flex;
     flex-direction: column;
@@ -2922,50 +2964,73 @@ html {
     line-height: 1.4;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .about-bottom-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una colonna su mobile */
     }
 }
+/* Seconda immagine - Stesse dimensioni della prima */
+.about-secondary-image {
+    margin-top: 20px;
+    border-radius: 20px; /* Stesso border-radius della prima immagine */
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.15); /* Stessa ombra */
+    border: 8px solid var(--white); /* Stesso bordo bianco */
+    transition: all 0.3s ease;
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+}
 
-/* ============================================
-   CARD STATISTICHE IN BASSO - SFONDO VERDE
-   ============================================ */
+.about-secondary-image:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 25px 60px rgba(30, 64, 175, 0.2);
+}
+
+.about-secondary-image img {
+    width: 100%;
+    height: auto; /* Altezza automatica per mantenere proporzioni */
+    display: block;
+    object-fit: cover; /* Assicura che copra l'area senza distorsioni */
+    transition: transform 0.4s ease;
+}
+
+.about-secondary-image:hover img {
+    transform: scale(1.03);
+}
+/* Card statistiche in basso - SFONDO SCURO */
 .bottom-stat-card {
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     padding: 20px;
     border-radius: 16px;
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
-    border: 2px solid rgba(52, 211, 153, 0.2);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
+    border: 2px solid rgba(59, 130, 246, 0.2);
     transition: all 0.3s;
     color: white;
 }
 
 .bottom-stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(16, 185, 129, 0.4);
-    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.4);
+    border-color: rgba(59, 130, 246, 0.4);
 }
 
 .bottom-stat-card .stat-value {
-    color: #ecfdf5;
+    color: #fbbf24; /* Arancione chiaro per il numero */
 }
 
 .bottom-stat-card .stat-label {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* ============================================
-   CARD INTRODUTTIVE - SFONDO VERDE
-   ============================================ */
+/* Card introduttive - SFONDO SCURO */
 .intro-card {
-    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
     padding: 35px;
     border-radius: 20px;
-    border: 2px solid rgba(52, 211, 153, 0.2);
+    border: 2px solid rgba(59, 130, 246, 0.2);
     transition: all 0.4s;
     position: relative;
     overflow: hidden;
@@ -2979,15 +3044,15 @@ html {
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, #34d399, #6ee7b7);
+    background: linear-gradient(180deg, #f59e0b, #fbbf24);
     transform: scaleY(0);
     transition: transform 0.4s;
 }
 
 .intro-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.4);
-    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.4);
+    border-color: rgba(59, 130, 246, 0.4);
 }
 
 .intro-card:hover::before {
@@ -2995,88 +3060,82 @@ html {
 }
 
 .intro-card h3 {
-    color: #ecfdf5;
+    color: #fbbf24; /* Titolo arancione */
 }
 
 .intro-card p {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* ============================================
-   FEATURE ITEMS - SFONDO VERDE
-   ============================================ */
+/* Feature items - SFONDO SCURO */
 .feature-item {
-    background: linear-gradient(135deg, #6ee7b7 0%, #a7f3d0 100%);
+    background: linear-gradient(135deg, #4b69ba 0%, #1e40af 100%);
     padding: 22px;
     border-radius: 14px;
-    border: 2px solid rgba(52, 211, 153, 0.2);
+    border: 2px solid rgba(59, 130, 246, 0.2);
     transition: all 0.3s;
     color: white;
 }
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.3);
-    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.3);
+    border-color: rgba(59, 130, 246, 0.4);
 }
 
 .feature-item h4 {
-    color: #ecfdf5;
+    color: #fbbf24; /* Titolo arancione */
 }
 
 .feature-item p {
     color: rgba(255, 255, 255, 0.85);
 }
 
+/* Icone delle feature - più chiare */
 .feature-icon {
-    background: linear-gradient(135deg, #34d399, #6ee7b7);
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
     color: white;
 }
-
-/* ============================================
-   CARD STATISTICHE - TONI CHIARI
-   ============================================ */
+/* 1. Card statistiche in basso (leggermente più scure) */
 .bottom-stat-card {
-    background: linear-gradient(135deg, #a7f3d0 0%, #6ee7b7 100%);
+    background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
     padding: 22px;
     border-radius: 16px;
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
-    border: 2px solid rgba(16, 185, 129, 0.25);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.15);
+    border: 2px solid rgba(30, 64, 175, 0.25);
     transition: all 0.3s;
-    color: #064e3b;
+    color: #0f172a;
 }
 
 .bottom-stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.2);
-    border-color: rgba(16, 185, 129, 0.4);
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.2);
+    border-color: rgba(30, 64, 175, 0.4);
 }
 
 .bottom-stat-card .stat-value {
-    color: #065f46;
+    color: #1e40af;
     font-weight: 800;
 }
 
 .bottom-stat-card .stat-label {
-    color: #374151;
+    color: #334155;
     font-weight: 600;
 }
 
-/* ============================================
-   CARD INTRODUTTIVE - TONI MEDI
-   ============================================ */
+/* 2. Card introduttive (tono medio equilibrato) */
 .intro-card {
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
     padding: 35px;
     border-radius: 20px;
-    border: 2px solid rgba(16, 185, 129, 0.2);
+    border: 2px solid rgba(30, 64, 175, 0.2);
     transition: all 0.4s;
     position: relative;
     overflow: hidden;
-    color: #064e3b;
+    color: #0f172a;
 }
 
 .intro-card::before {
@@ -3093,8 +3152,8 @@ html {
 
 .intro-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.15);
-    border-color: rgba(16, 185, 129, 0.35);
+    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.15);
+    border-color: rgba(30, 64, 175, 0.35);
 }
 
 .intro-card:hover::before {
@@ -3102,74 +3161,75 @@ html {
 }
 
 .intro-card h3 {
-    color: #065f46;
+    color: #1e3a8a;
     font-weight: 700;
 }
 
 .intro-card p {
-    color: #374151;
+    color: #475569;
     line-height: 1.8;
 }
 
-/* ============================================
-   FEATURE ITEMS - GRIGIO-VERDE
-   ============================================ */
+/* 3. Feature items (grigio-blu professionale) */
 .feature-item {
-    background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
     padding: 24px;
     border-radius: 14px;
-    border: 2px solid rgba(16, 185, 129, 0.15);
+    border: 2px solid rgba(30, 64, 175, 0.15);
     transition: all 0.3s;
-    color: #064e3b;
+    color: #0f172a;
 }
 
 .feature-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.12);
-    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 15px 35px rgba(30, 64, 175, 0.12);
+    border-color: rgba(30, 64, 175, 0.3);
 }
 
 .feature-item h4 {
-    color: #065f46;
+    color: #1e3a8a;
     font-weight: 700;
 }
 
 .feature-item p {
-    color: #374151;
+    color: #475569;
 }
 
 .feature-icon {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-light));
     color: white;
 }
-
 .about::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 100%; /* Copre tutta la larghezza */
     max-width: 100%;
-    height: 4px;
+    height: 4px; /* Più spessa */
+    /* Gradiente più netto e visibile */
     background: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-light) 50%, var(--accent) 100%);
-    opacity: 0.8;
+    opacity: 0.8; /* Molto più visibile */
     border-radius: 4px;
 }
 
+/* Spazio extra per non schiacciare i contenuti */
 .about {
-    padding-bottom: 60px;
+    padding-bottom: 60px; 
 }
 
-/* ============================================
-   SEZIONE SERVIZI - SFONDO INTERMEDIO
-   ============================================ */
+/* Sezione Servizi - Sfondo intermedio */
 .services {
-    background: linear-gradient(180deg, #d1fae5 0%, #6ee7b7 100%);
+    /* Gradiente da Azzurro Chiaro a Blu Medio */
+    background: linear-gradient(180deg, #dbeafe 0%, #93c5fd 100%);
+    
+    /* Mantieni gli altri stili esistenti */
     position: relative;
     padding: 120px 0;
 }
 
+/* Opzionale: Aggiungiamo un leggero overlay per dare texture */
 .services::before {
     content: '';
     position: absolute;
@@ -3180,12 +3240,10 @@ html {
     background: radial-gradient(circle at top right, rgba(255,255,255,0.4), transparent 40%);
     pointer-events: none;
 }
-
-/* ============================================
-   LINEA DI SEPARAZIONE - PERCHÉ SCEGLIERCI
-   ============================================ */
+/* Linea di separazione superiore per "Perché Sceglierci" */
 .why-us {
     position: relative;
+    /* Il resto del tuo CSS esistente per why-us... */
 }
 
 .why-us::before {
@@ -3194,14 +3252,11 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6px;
+    height: 6px; /* Leggermente più spessa per il design scuro */
     background: linear-gradient(90deg, var(--primary-light), var(--accent), var(--primary-light));
     z-index: 10;
 }
-
-/* ============================================
-   SECTION TAG - INGRANDITO
-   ============================================ */
+/* FORZA ingrandimento per TUTTI i section-tag */
 .section-tag {
     font-size: 2.2rem !important;
     font-weight: 800 !important;
@@ -3213,6 +3268,7 @@ html {
     color: var(--primary-blue) !important;
 }
 
+/* Override specifico per ogni sezione */
 #chi-siamo .section-tag,
 #servizi .section-tag,
 #perche-noi .section-tag,
@@ -3226,10 +3282,12 @@ html {
     letter-spacing: 4px !important;
 }
 
+/* Sezioni scure */
 .why-us .section-tag {
     color: var(--accent-light) !important;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .section-tag {
         font-size: 1.8rem !important;
@@ -3241,16 +3299,14 @@ html {
         font-size: 1.4rem !important;
     }
 }
-
-/* ============================================
-   CARD SERVIZI - LINEA VERDE ON HOVER
-   ============================================ */
+/* Card servizi - Linea blu laterale on hover */
 .service-card {
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Linea blu laterale - nascosta di default */
 .service-card::before {
     content: '';
     position: absolute;
@@ -3265,40 +3321,42 @@ html {
     z-index: 1;
 }
 
+/* Effetto hover sulla card */
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 25px 60px rgba(30, 64, 175, 0.2);
 }
 
+/* Mostra la linea blu al hover */
 .service-card:hover::before {
     transform: scaleY(1);
     transform-origin: top;
 }
 
+/* Opzionale: aggiungi padding sinistro per non sovrapporre il contenuto */
 .service-content {
     padding-left: 25px;
     position: relative;
     z-index: 2;
 }
-
 .service-card {
     border: 3px solid transparent;
     transition: all 0.3s;
 }
 
 .service-card:hover {
-    border-color: #10b981;
+    border-color: #1e40af; /* Blu scuro */
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 20px 40px rgba(30, 64, 175, 0.2);
 }
-
 /* ============================================
-   HERO ISO - SEZIONE GRAFICA E ANIMATA
+   HERO ISO - Sezione Grafica e Animata
    ============================================ */
+
 .hero-iso {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(135deg, #10b981 0%, #34d399 30%, #6ee7b7 70%, #a7f3d0 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 30%, #2563eb 70%, #3b82f6 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3306,6 +3364,7 @@ html {
     padding: 120px 0 80px;
 }
 
+/* Sfondo animato con gradiente che si muove */
 .hero-iso::before {
     content: '';
     position: absolute;
@@ -3313,9 +3372,9 @@ html {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 20% 80%, rgba(52, 211, 153, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
     animation: bgFloat 15s ease-in-out infinite;
 }
 
@@ -3325,19 +3384,21 @@ html {
     66% { transform: translate(-20px, 20px) rotate(-1deg); }
 }
 
+/* Grid pattern */
 .hero-grid {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
     background-size: 80px 80px;
     pointer-events: none;
 }
 
+/* Forme geometriche animate */
 .hero-shapes {
     position: absolute;
     top: 0;
@@ -3357,7 +3418,7 @@ html {
 .shape-1 {
     width: 400px;
     height: 400px;
-    background: linear-gradient(135deg, #34d399, #6ee7b7);
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
     top: -100px;
     right: -100px;
     animation: float 20s ease-in-out infinite;
@@ -3366,7 +3427,7 @@ html {
 .shape-2 {
     width: 300px;
     height: 300px;
-    background: linear-gradient(135deg, #10b981, #6ee7b7);
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
     bottom: -50px;
     left: -50px;
     animation: float 25s ease-in-out infinite reverse;
@@ -3375,7 +3436,7 @@ html {
 .shape-3 {
     width: 200px;
     height: 200px;
-    background: #34d399;
+    background: #f59e0b;
     top: 40%;
     right: 15%;
     animation: float 18s ease-in-out infinite 2s;
@@ -3393,7 +3454,7 @@ html {
 .shape-5 {
     width: 100px;
     height: 100px;
-    border: 2px solid rgba(52, 211, 153, 0.3);
+    border: 2px solid rgba(245, 158, 11, 0.3);
     bottom: 30%;
     right: 25%;
     animation: rotate 25s linear infinite reverse;
@@ -3409,6 +3470,7 @@ html {
     to { transform: rotate(360deg); }
 }
 
+/* Icone fluttuanti */
 .floating-icon {
     position: absolute;
     color: rgba(255,255,255,0.15);
@@ -3438,6 +3500,7 @@ html {
     50% { transform: translateY(-20px) rotate(10deg); opacity: 0.3; }
 }
 
+/* Contenuto Hero */
 .hero-content {
     position: relative;
     z-index: 10;
@@ -3446,6 +3509,7 @@ html {
     margin: 0 auto;
 }
 
+/* Badge animato */
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -3465,7 +3529,7 @@ html {
 .badge-dot {
     width: 10px;
     height: 10px;
-    background: #34d399;
+    background: #f59e0b;
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -3475,6 +3539,7 @@ html {
     50% { transform: scale(1.3); opacity: 0.7; }
 }
 
+/* Titolo con animazione stagger */
 .hero-title {
     font-size: 4.5rem;
     font-weight: 900;
@@ -3499,7 +3564,7 @@ html {
 .title-line:nth-child(3) { animation-delay: 0.6s; }
 
 .title-line.highlight {
-    color: #34d399;
+    color: #f59e0b;
     font-style: italic;
     position: relative;
 }
@@ -3511,7 +3576,7 @@ html {
     left: 0;
     width: 100%;
     height: 6px;
-    background: linear-gradient(90deg, #34d399, transparent);
+    background: linear-gradient(90deg, #f59e0b, transparent);
     border-radius: 3px;
     animation: underlineGrow 0.8s ease-out 1s forwards;
     transform-origin: left;
@@ -3540,6 +3605,7 @@ html {
     }
 }
 
+/* Sottotitolo */
 .hero-subtitle {
     font-size: 1.4rem;
     color: rgba(255,255,255,0.9);
@@ -3556,6 +3622,7 @@ html {
     to { opacity: 1; }
 }
 
+/* Pulsanti animati */
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -3581,9 +3648,9 @@ html {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #34d399 0%, #6ee7b7 100%);
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
     color: white;
-    box-shadow: 0 10px 30px rgba(52, 211, 153, 0.4);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
 }
 
 .btn-primary::before {
@@ -3599,7 +3666,7 @@ html {
 
 .btn-primary:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 40px rgba(52, 211, 153, 0.5);
+    box-shadow: 0 15px 40px rgba(245, 158, 11, 0.5);
 }
 
 .btn-primary:hover::before {
@@ -3631,6 +3698,7 @@ html {
     transform: translateY(3px);
 }
 
+/* Stats in linea */
 .hero-stats {
     display: flex;
     align-items: center;
@@ -3649,7 +3717,7 @@ html {
     display: block;
     font-size: 2.5rem;
     font-weight: 800;
-    color: #6ee7b7;
+    color: #fbbf24;
     line-height: 1;
     margin-bottom: 8px;
 }
@@ -3667,6 +3735,7 @@ html {
     border-radius: 2px;
 }
 
+/* Scroll indicator */
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
@@ -3707,10 +3776,12 @@ html {
     100% { transform: translateX(-50%) translateY(15px); opacity: 0; }
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .hero-title {
         font-size: 3.5rem;
     }
+    
     .hero-subtitle {
         font-size: 1.2rem;
     }
@@ -3721,52 +3792,50 @@ html {
         min-height: auto;
         padding: 100px 0 60px;
     }
+    
     .hero-title {
         font-size: 2.5rem;
         flex-direction: column;
         gap: 5px;
     }
-
+    
     .hero-subtitle {
         font-size: 1.1rem;
     }
-
+    
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .animated-btn {
         width: 100%;
         max-width: 300px;
         justify-content: center;
     }
-
+    
     .hero-stats {
         flex-direction: column;
         gap: 20px;
     }
-
+    
     .hero-stat-divider {
         width: 50px;
         height: 2px;
     }
-
+    
     .scroll-indicator {
         display: none;
     }
-
+    
     .shape {
         opacity: 0.05;
     }
 }
-
-/* ============================================
-   TITOLO RESPONSIVE
-   ============================================ */
+/* Titolo responsive - va a capo correttamente */
 .hero-title {
     display: flex !important;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap !important; /* Permette di andare a capo */
     justify-content: center !important;
     align-items: center;
     gap: 15px !important;
@@ -3776,18 +3845,21 @@ html {
     line-height: 1.2 !important;
 }
 
+/* Ogni parte del titolo occupa la larghezza necessaria */
 .hero-title .title-line {
     display: inline-block !important;
     text-align: center;
-    white-space: normal !important;
+    white-space: normal !important; /* Permette word wrap */
 }
 
+/* Su schermi grandi: cerca di stare su 2 righe max */
 @media (min-width: 1200px) {
     .hero-title {
         flex-wrap: wrap !important;
     }
 }
 
+/* Su tablet: va a capo naturalmente */
 @media (max-width: 1024px) {
     .hero-title {
         font-size: 2.8rem !important;
@@ -3795,28 +3867,27 @@ html {
     }
 }
 
+/* Su mobile: tutto a capo */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.2rem !important;
         flex-direction: column !important;
         gap: 8px !important;
     }
+    
     .hero-title .title-line {
         width: 100% !important;
     }
 }
-
-/* ============================================
-   POSIZIONAMENTO COMPATTO HERO
-   ============================================ */
+/* POSIZIONAMENTO MASSIMO - Hero Elements Ultra-Compact */
 .hero-iso {
-    padding-top: 20px !important;
+    padding-top: 20px !important; /* Minimo assoluto */
     padding-bottom: 30px !important;
-    min-height: 75vh !important;
+    min-height: 75vh !important; /* Altezza minima ridotta */
 }
 
 .hero-iso .hero-badge {
-    margin-top: -140px !important;
+    margin-top: -140px !important; /* Super in alto */
     margin-bottom: 0 !important;
     padding: 8px 20px !important;
 }
@@ -3825,24 +3896,24 @@ html {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
     line-height: 1 !important;
-    font-size: 3.5rem !important;
+    font-size: 3.5rem !important; /* Leggermente più piccolo */
 }
 
 .hero-iso .hero-subtitle {
-    margin-top: 0 !important;
+    margin-top: 0 !important; /* Attaccato al titolo */
     margin-bottom: 5px !important;
     font-size: 1.1rem !important;
     line-height: 1.4 !important;
 }
 
 .hero-iso .hero-buttons {
-    margin-bottom: 10px !important;
+    margin-bottom: 10px !important; /* Minimo spazio */
     margin-top: 5px !important;
     gap: 8px !important;
 }
 
 .hero-iso .hero-stats {
-    margin-top: 5px !important;
+    margin-top: 5px !important; /* Subito sotto */
     gap: 10px !important;
 }
 
@@ -3863,34 +3934,37 @@ html {
     height: 30px !important;
 }
 
+/* Scroll indicator più in basso o nascosto */
 .hero-iso .scroll-indicator {
     bottom: 20px !important;
     opacity: 0.5 !important;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .hero-iso {
         padding-top: 80px !important;
         min-height: auto !important;
     }
+    
     .hero-iso .hero-badge {
         margin-top: -60px !important;
     }
-
+    
     .hero-iso .hero-title {
         font-size: 2.5rem !important;
     }
-
+    
     .hero-iso .hero-subtitle {
         margin-top: 5px !important;
         margin-bottom: 10px !important;
         font-size: 1rem !important;
     }
-
+    
     .hero-iso .hero-buttons {
         margin-bottom: 15px !important;
     }
-
+    
     .hero-iso .hero-stats {
         margin-top: 15px !important;
     }
@@ -3901,35 +3975,38 @@ html {
         padding-top: 90px !important;
         padding-bottom: 40px !important;
     }
+    
     .hero-iso .hero-badge {
         margin-top: -50px !important;
     }
-
+    
     .hero-iso .hero-title {
         font-size: 2rem !important;
     }
-
+    
     .hero-iso .hero-stats {
         margin-top: 20px !important;
         flex-direction: column !important;
         gap: 15px !important;
     }
-
+    
     .hero-iso .hero-stat-divider {
         width: 30px !important;
         height: 2px !important;
     }
 }
-
 /* ============================================
-   HERO TYPOGRAPHY - DIMENSIONI MAGGIORI
+   HERO TYPOGRAPHY - Dimensioni Maggiori
    ============================================ */
+
+/* Badge in alto */
 .hero-badge {
     font-size: 1.2rem !important;
     padding: 14px 28px !important;
     letter-spacing: 0.5px !important;
 }
 
+/* Titolo principale */
 .hero-title {
     font-size: 5.5rem !important;
     line-height: 1.05 !important;
@@ -3940,6 +4017,7 @@ html {
     font-size: inherit !important;
 }
 
+/* Sottotitolo */
 .hero-subtitle {
     font-size: 1.75rem !important;
     line-height: 1.6 !important;
@@ -3947,6 +4025,7 @@ html {
     margin-bottom: 20px !important;
 }
 
+/* Pulsanti */
 .animated-btn {
     font-size: 1.25rem !important;
     padding: 20px 42px !important;
@@ -3958,6 +4037,7 @@ html {
     height: 22px !important;
 }
 
+/* Statistiche */
 .stat-num {
     font-size: 3.5rem !important;
     line-height: 1 !important;
@@ -3975,6 +4055,9 @@ html {
     width: 3px !important;
 }
 
+/* ============================================
+   RESPONSIVE - Scalatura automatica
+   ============================================ */
 @media (max-width: 1200px) {
     .hero-title { font-size: 4.5rem !important; }
     .hero-subtitle { font-size: 1.5rem !important; }
@@ -3990,56 +4073,60 @@ html {
     .stat-label { font-size: 0.95rem !important; }
     .hero-stat-divider { height: 2px !important; width: 40px !important; }
 }
-
 /* ============================================
    TESTO GIGANTE + POSIZIONAMENTO COMPATTO
    ============================================ */
+
+/* 1. HERO TITLE - Molto grande e compatto */
 .hero-title {
-    font-size: 6rem !important;
-    line-height: 1.05 !important;
-    margin-bottom: 0 !important;
+    font-size: 6rem !important;       /* Dimensione enorme */
+    line-height: 1.05 !important;     /* Righe vicine */
+    margin-bottom: 0 !important;      /* Zero spazio sotto */
     margin-top: 0 !important;
 }
 
+/* 2. HERO SUBTITLE - Grande e vicino al titolo */
 .hero-subtitle {
-    font-size: 2rem !important;
+    font-size: 2rem !important;       /* Dimensione grande */
     line-height: 1.4 !important;
-    margin-top: 10px !important;
-    margin-bottom: 20px !important;
+    margin-top: 10px !important;      /* Attaccato al titolo */
+    margin-bottom: 20px !important;   /* Spazio ridotto prima dei bottoni */
     font-weight: 500 !important;
 }
 
+/* 3. STATISTICHE - Numeri giganti */
 .stat-num {
-    font-size: 4.5rem !important;
+    font-size: 4.5rem !important;     /* Numeri enormi */
     line-height: 1 !important;
     margin-bottom: 5px !important;
 }
 
 .stat-label {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem !important;     /* Testo leggibile */
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+/* 4. POSIZIONAMENTO GENERALE (Mantenuto in alto) */
 .hero-iso {
     padding-top: 40px !important;
     min-height: 85vh !important;
 }
 
 .hero-badge {
-    margin-top: -120px !important;
+    margin-top: -120px !important;    /* Badge molto in alto */
     font-size: 1.3rem !important;
     padding: 12px 24px !important;
 }
 
 .hero-buttons {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px !important;   /* Bottoni vicini alle stats */
     margin-top: 10px !important;
 }
 
 .hero-stats {
-    margin-top: 15px !important;
+    margin-top: 15px !important;      /* Stats subito sotto i bottoni */
     gap: 40px !important;
 }
 
@@ -4048,54 +4135,60 @@ html {
     width: 4px !important;
 }
 
+/* RESPONSIVE: Su mobile riduce un po' per non rompere lo schermo */
 @media (max-width: 768px) {
     .hero-title { font-size: 2.5rem !important; }
     .hero-subtitle { font-size: 1.1rem !important; }
     .stat-num { font-size: 2.5rem !important; }
-    .stat-label  { font-size: 0.9rem !important; }
+    .stat-label { font-size: 0.9rem !important; }
     .hero-badge { margin-top: -60px !important; font-size: 0.9rem !important; }
 }
-
+/* Hero Subtitle - Font MOLTO più grande */
 .hero-iso .hero-subtitle {
-    font-size: 3.4rem !important;
-    line-height: 1.25 !important;
-    max-width: 1150px !important;
-    margin-top: 12px !important;
-    margin-bottom: 22px !important;
-    font-weight: 500 !important;
-    letter-spacing: 0.3px !important;
+    font-size: 3.4rem !important;       /* Dimensione aumentata drasticamente */
+    line-height: 1.25 !important;       /* Interlinea stretta ma leggibile */
+    max-width: 1150px !important;       /* Larghezza massima per stare su poche righe */
+    margin-top: 12px !important;        /* Attaccato al titolo */
+    margin-bottom: 22px !important;     /* Spazio prima dei pulsanti */
+    font-weight: 500 !important;        /* Peso medio per eleganza */
+    letter-spacing: 0.3px !important;   /* Leggera spaziatura per chiarezza */
 }
 
+/* Adattamento progressivo per schermi medi */
 @media (max-width: 1200px) {
     .hero-iso .hero-subtitle {
         font-size: 2.6rem !important;
     }
 }
 
+/* Adattamento per tablet/mobile */
 @media (max-width: 768px) {
     .hero-iso .hero-subtitle {
-        font-size: 1.7rem !important;
+        font-size: 1.7rem !important;   /* Leggibile senza rompere il layout */
         line-height: 1.35 !important;
         max-width: 100% !important;
     }
 }
-
 /* ============================================
-   TITOLO SPOSTATO IN BASSO
+   TITOLO SPOSTATO IN BASSO - Allineato ai Pulsanti
    ============================================ */
+
+/* 1. Badge rimane in alto */
 .hero-badge {
     margin-top: -120px !important;
     margin-bottom: 0 !important;
 }
 
+/* 2. Titolo spostato GIÙ (dopo i bottoni) */
 .hero-title {
-    order: 4 !important;
-    margin-top: 30px !important;
+    order: 4 !important; /* Sposta il titolo dopo sottotitolo e bottoni */
+    margin-top: 30px !important; /* Spazio sopra il titolo */
     margin-bottom: 0 !important;
     font-size: 5rem !important;
     line-height: 1.1 !important;
 }
 
+/* 3. Sottotitolo prima del titolo */
 .hero-subtitle {
     order: 2 !important;
     margin-top: 10px !important;
@@ -4103,22 +4196,26 @@ html {
     font-size: 2rem !important;
 }
 
+/* 4. Bottoni prima del titolo */
 .hero-buttons {
     order: 3 !important;
     margin-bottom: 0 !important;
     margin-top: 10px !important;
 }
 
+/* 5. Stats in fondo */
 .hero-stats {
     order: 5 !important;
     margin-top: 25px !important;
 }
 
+/* Flexbox per riordinare gli elementi */
 .hero-content {
     display: flex !important;
     flex-direction: column !important;
 }
 
+/* Responsive: su mobile torna all'ordine normale per leggibilità */
 @media (max-width: 768px) {
     .hero-title {
         order: 1 !important;
@@ -4129,29 +4226,32 @@ html {
     .hero-buttons { order: 3 !important; }
     .hero-stats { order: 4 !important; }
 }
-
 /* ============================================
-   INVERSIONE ORDINE
+   INVERSIONE ORDINE: Sottotitolo PRIMA del Titolo
    ============================================ */
+
 .hero-content {
     display: flex !important;
     flex-direction: column !important;
 }
 
+/* 1. Badge (rimane in alto) */
 .hero-badge {
     order: 1 !important;
-    margin-top: -120px !important;
+    margin-top: -120px !important; /* Mantenuto molto in alto come piace a te */
     margin-bottom: 15px !important;
 }
 
+/* 2. Sottotitolo (prima del titolo) */
 .hero-subtitle {
     order: 2 !important;
-    font-size: 2.2rem !important;
+    font-size: 2.2rem !important; /* Grande e leggibile */
     line-height: 1.3 !important;
     margin-bottom: 15px !important;
     margin-top: 0 !important;
 }
 
+/* 3. Titolo Grande (dopo il sottotitolo) */
 .hero-title {
     order: 3 !important;
     font-size: 5.5rem !important;
@@ -4160,17 +4260,20 @@ html {
     margin-top: 0 !important;
 }
 
+/* 4. Bottoni */
 .hero-buttons {
     order: 4 !important;
     margin-bottom: 25px !important;
     margin-top: 0 !important;
 }
 
+/* 5. Stats (in fondo) */
 .hero-stats {
     order: 5 !important;
     margin-top: 15px !important;
 }
 
+/* Responsive: Su mobile mantiene l'ordine ma riduce le dimensioni */
 @media (max-width: 768px) {
     .hero-badge { margin-top: -60px !important; }
     .hero-subtitle { font-size: 1.3rem !important; order: 2 !important; }
@@ -4178,10 +4281,10 @@ html {
     .hero-buttons { order: 4 !important; }
     .hero-stats { order: 5 !important; }
 }
-
 /* ============================================
-   ORDINE ESATTO
+   ORDINE ESATTO: Badge -> Titolo -> Sottotitolo -> Bottoni -> Stats
    ============================================ */
+
 .hero-content {
     display: flex !important;
     flex-direction: column !important;
@@ -4189,14 +4292,16 @@ html {
     text-align: center !important;
 }
 
+/* 1. Badge - Molto in alto */
 .hero-badge {
     order: 1 !important;
-    margin-top: -120px !important;
+    margin-top: -120px !important; /* Attaccato al top */
     margin-bottom: 15px !important;
     font-size: 1.3rem !important;
     padding: 12px 28px !important;
 }
 
+/* 2. Titolo Grande - Subito dopo il badge */
 .hero-title {
     order: 2 !important;
     font-size: 5.5rem !important;
@@ -4205,6 +4310,7 @@ html {
     margin-top: 0 !important;
 }
 
+/* 3. Sottotitolo - Dopo il titolo */
 .hero-subtitle {
     order: 3 !important;
     font-size: 2.2rem !important;
@@ -4214,6 +4320,7 @@ html {
     margin-top: 0 !important;
 }
 
+/* 4. Bottoni - Dopo il sottotitolo */
 .hero-buttons {
     order: 4 !important;
     margin-bottom: 30px !important;
@@ -4221,6 +4328,7 @@ html {
     gap: 20px !important;
 }
 
+/* 5. Stats - In fondo a tutto */
 .hero-stats {
     order: 5 !important;
     margin-top: 15px !important;
@@ -4243,6 +4351,7 @@ html {
     background: rgba(255,255,255,0.3) !important;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .hero-badge { margin-top: -60px !important; font-size: 1rem !important; }
     .hero-title { font-size: 2.8rem !important; }
@@ -4253,37 +4362,43 @@ html {
     .hero-stat-divider { width: 40px !important; height: 2px !important; }
     .stat-num { font-size: 2.5rem !important; }
 }
-
-/* ============================================
-   BADGE CONSULENZA SPECIALISTICA
-   ============================================ */
+/* Badge Consulenza Specialistica - Sempre Visibile */
 .hero-badge {
-    position: relative;
+    position: relative; /* Cambiato da absolute/flex generico */
     z-index: 20;
-    margin-top: 0 !important;
+    
+    /* Posizionamento sicuro */
+    margin-top: 0 !important; /* Rimuovi il margine negativo estremo */
     margin-bottom: 20px !important;
-    background: rgba(255, 255, 255, 0.15) !important;
+    
+    /* Stile grafico migliorato per leggibilità */
+    background: rgba(255, 255, 255, 0.15) !important; /* Più visibile */
     backdrop-filter: blur(12px) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
     padding: 14px 32px !important;
     border-radius: 50px !important;
+    
+    /* Testo più grande e leggibile */
     font-size: 1.4rem !important;
     font-weight: 700 !important;
     letter-spacing: 1px !important;
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    
+    /* Animazione entrata */
     animation: fadeInDown 0.8s ease-out 0.1s forwards;
     display: inline-flex;
     align-items: center;
     gap: 12px;
 }
 
+/* Punto arancione animato */
 .badge-dot {
     width: 12px;
     height: 12px;
-    background: #34d399;
+    background: #f59e0b;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
     animation: pulse 2s infinite;
 }
 
@@ -4293,6 +4408,7 @@ html {
     100% { transform: scale(0.95); opacity: 0.7; }
 }
 
+/* Responsive: Su mobile si adatta */
 @media (max-width: 768px) {
     .hero-badge {
         font-size: 1rem !important;
@@ -4304,14 +4420,16 @@ html {
         height: 8px;
     }
 }
-
 /* ============================================
-   HERO LAYOUT - BLOCCO SPOSTATO
+   HERO LAYOUT - Blocco Spostato Più In Basso & Testo Paragrafo
    ============================================ */
+
+/* 1. Sposta TUTTO il contenuto della hero più in basso */
 .hero-iso .container {
-    padding-top: 120px !important;
+    padding-top: 120px !important; /* Spinge tutto verso il basso */
 }
 
+/* 2. Badge "Consulenza Specialistica" - Stile pulito */
 .hero-badge {
     font-size: 1rem !important;
     font-weight: 600 !important;
@@ -4323,6 +4441,7 @@ html {
     padding: 10px 24px !important;
 }
 
+/* 3. Titolo Principale - Grande ma equilibrato */
 .hero-title {
     font-size: 4.5rem !important;
     line-height: 1.1 !important;
@@ -4330,18 +4449,20 @@ html {
     font-weight: 800 !important;
 }
 
+/* 4. IL TESTO DESCRITTIVO - Stile Paragrafo (Come richiesto) */
 .hero-subtitle {
-    font-size: 1.25rem !important;
-    line-height: 1.8 !important;
-    font-weight: 400 !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    max-width: 800px !important;
-    margin-left: auto !important;
+    font-size: 1.25rem !important;       /* Dimensione da paragrafo leggibile */
+    line-height: 1.8 !important;         /* Interlinea ampia per leggibilità */
+    font-weight: 400 !important;         /* Peso normale, non grassetto */
+    color: rgba(255, 255, 255, 0.9) !important; /* Bianco leggermente trasparente */
+    max-width: 800px !important;         /* Larghezza limitata per lettura confortevole */
+    margin-left: auto !important;        /* Centrato */
     margin-right: auto !important;
-    margin-bottom: 40px !important;
-    font-family: inherit !important;
+    margin-bottom: 40px !important;      /* Spazio prima dei bottoni */
+    font-family: inherit !important;     /* Usa il font di base del sito */
 }
 
+/* 5. Bottoni */
 .hero-buttons {
     margin-bottom: 50px !important;
     gap: 20px !important;
@@ -4353,6 +4474,7 @@ html {
     font-weight: 600 !important;
 }
 
+/* 6. Statistiche */
 .hero-stats {
     margin-top: 20px !important;
     gap: 40px !important;
@@ -4361,7 +4483,7 @@ html {
 .stat-num {
     font-size: 3rem !important;
     font-weight: 800 !important;
-    color: #6ee7b7 !important;
+    color: #fbbf24 !important; /* Arancione dorato */
 }
 
 .stat-label {
@@ -4372,6 +4494,7 @@ html {
     letter-spacing: 1px;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .hero-iso .container { padding-top: 80px !important; }
     .hero-title { font-size: 2.8rem !important; }
@@ -4380,44 +4503,47 @@ html {
     .animated-btn { width: 100% !important; justify-content: center !important; }
     .hero-stats { flex-direction: column !important; gap: 20px !important; }
 }
-
+/* 4. TESTO DESCRITTIVO - Leggermente più piccolo */
 .hero-iso .hero-subtitle {
-    font-size: 1.8rem !important;
-    line-height: 1.5 !important;
-    font-weight: 400 !important;
+    font-size: 1.8rem !important;     /* Dimensione ridotta ma ancora grande */
+    line-height: 1.5 !important;      /* Interlinea leggermente più ampia */
+    font-weight: 400 !important;      /* Peso normale per eleganza */
     color: rgba(255, 255, 255, 0.9) !important;
-    max-width: 900px !important;
+    max-width: 900px !important;      /* Larghezza ottimizzata */
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-bottom: 35px !important;
+    margin-bottom: 35px !important;   /* Spazio prima dei bottoni */
 }
-
 /* ============================================
-   HERO STATS - DIMENSIONI AUMENTATE
+   HERO STATS - Dimensione Molto Aumentata
    ============================================ */
+
 .hero-iso .hero-stats {
     margin-top: 40px !important;
-    gap: 60px !important;
+    gap: 60px !important; /* Più spazio tra i blocchi */
 }
 
+/* Numeri Giganti */
 .hero-iso .stat-num {
-    font-size: 5rem !important;
+    font-size: 5rem !important;       /* Dimensione enorme */
     line-height: 1 !important;
-    font-weight: 900 !important;
-    color: #6ee7b7 !important;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-weight: 900 !important;      /* Grassetto massimo */
+    color: #fbbf24 !important;        /* Arancione dorato brillante */
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Ombra per leggibilità */
     display: block;
     margin-bottom: 10px !important;
 }
 
+/* Etichette più visibili */
 .hero-iso .stat-label {
-    font-size: 1.3rem !important;
+    font-size: 1.3rem !important;     /* Testo più grande */
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgba(255, 255, 255, 0.9) !important;
 }
 
+/* Divisori più alti e spessi */
 .hero-iso .hero-stat-divider {
     height: 80px !important;
     width: 4px !important;
@@ -4425,62 +4551,82 @@ html {
     border-radius: 4px;
 }
 
+/* Responsive: Su mobile si ridimensiona per non rompere lo schermo */
 @media (max-width: 768px) {
     .hero-iso .hero-stats {
         flex-direction: column !important;
         gap: 30px !important;
     }
+    
     .hero-iso .stat-num {
         font-size: 3.5rem !important;
     }
-
+    
     .hero-iso .stat-label {
         font-size: 1.1rem !important;
     }
-
+    
     .hero-iso .hero-stat-divider {
         width: 50px !important;
         height: 3px !important;
     }
 }
-
 /* ============================================
-   LINEE DIVISORIE
+   LINEA DIVISORIA TRA CHI SIAMO E SERVIZI
    ============================================ */
+
+/* Aggiunge spazio sopra la sezione Servizi per la linea */
 .services {
     position: relative;
-    padding-top: 100px !important;
+    padding-top: 100px !important; /* Spazio per la linea */
 }
 
+/* La linea divisoria */
 .services::before {
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 80%; /* Lunghezza della linea */
     max-width: 1200px;
     height: 2px;
-    background: linear-gradient(90deg,
-    transparent 0%,
-    rgba(16, 185, 129, 0.1) 20%,
-    var(--primary-blue) 50%,
-    rgba(16, 185, 129, 0.1) 80%,
-    transparent 100%
+    /* Gradiente sfumato ai lati per eleganza */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(30, 64, 175, 0.1) 20%, 
+        var(--primary-blue) 50%, 
+        rgba(30, 64, 175, 0.1) 80%, 
+        transparent 100%
     );
     z-index: 1;
 }
 
+/* Opzionale: Se vuoi che la linea sia più visibile, usa questo invece del gradiente sopra:
+.services::before {
+    background: var(--primary-blue);
+    opacity: 0.3;
+}
+*/
+
+/* Responsive: Su mobile la linea è più corta */
 @media (max-width: 768px) {
     .services::before {
         width: 90%;
     }
 }
+/* ============================================
+   LINEA DIVISORIA TRA HERO STATS E SEZIONE ISO
+   ============================================ */
 
-.iso-intro,
-.about-iso-section {
+/* Assumiamo che la sezione dopo l'hero si chiami .iso-intro o simile. 
+   Se nel tuo HTML ha un'altra classe, sostituisci .iso-intro con quella corretta.
+   Esempio: se è <section class="about">, usa .about::before */
+
+.iso-intro, 
+.about-iso-section { /* Sostituisci con la classe reale della tua sezione */
     position: relative;
-    padding-top: 80px !important;
+    padding-top: 80px !important; /* Spazio sopra per la linea */
 }
 
 .iso-intro::before,
@@ -4490,59 +4636,71 @@ html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 70%; /* Lunghezza della linea */
     max-width: 1000px;
     height: 2px;
-    background: linear-gradient(90deg,
-    transparent 0%,
-    var(--primary-blue) 30%,
-    var(--accent) 70%,
-    transparent 100%
+    /* Gradiente sfumato blu-arancione per coerenza con il sito */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-blue) 30%, 
+        var(--accent) 70%, 
+        transparent 100%
     );
     opacity: 0.6;
     z-index: 1;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .iso-intro::before,
     .about-iso-section::before {
         width: 90%;
     }
 }
+/* ============================================
+   LINEA DIVISORIA TRA HERO STATS E CHI SIAMO
+   ============================================ */
 
+/* Aggiunge spazio sopra la sezione Chi Siamo per la linea */
 .about {
     position: relative;
-    padding-top: 100px !important;
+    padding-top: 100px !important; /* Spazio per la linea */
 }
 
+/* La linea divisoria */
 .about::before {
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 80%; /* Lunghezza della linea */
     max-width: 1200px;
     height: 2px;
-    background: linear-gradient(90deg,
-    transparent 0%,
-    var(--primary-blue) 30%,
-    var(--accent) 70%,
-    transparent 100%
+    /* Gradiente sfumato blu-arancione per coerenza con il sito */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-blue) 30%, 
+        var(--accent) 70%, 
+        transparent 100%
     );
     opacity: 0.6;
     z-index: 1;
 }
 
+/* Responsive: Su mobile la linea è più corta */
 @media (max-width: 768px) {
     .about::before {
         width: 90%;
     }
 }
+/* ============================================
+   LINEA DIVISORIA CONSULENZA-INTRO - Più Spessa
+   ============================================ */
 
 .consulenza-intro {
     position: relative;
-    padding-top: 80px !important;
+    padding-top: 80px !important; /* Spazio sopra per la linea */
 }
 
 .consulenza-intro::before {
@@ -4551,33 +4709,40 @@ html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 70%; /* Lunghezza della linea */
     max-width: 1000px;
-    height: 10px;
-    border-radius: 2px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 30%,
-        var(--accent) 70%,
+    height: 10px; /* SPESSORE AUMENTATO da 2px a 4px */
+    border-radius: 2px; /* Angoli arrotondati per morbidezza */
+    
+    /* Gradiente sfumato blu-arancione più intenso */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-blue) 30%, 
+        var(--accent) 70%, 
         transparent 100%
     );
-    opacity: 0.8;
+    opacity: 0.8; /* Leggermente più visibile */
     z-index: 1;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .consulenza-intro {
         padding-top: 60px !important;
     }
+    
     .consulenza-intro::before {
         width: 90%;
-        height: 3px;
+        height: 3px; /* Leggermente più sottile su mobile ma comunque visibile */
     }
 }
+/* ============================================
+   LINEA DIVISORIA ALL'INIZIO DI "CHI SIAMO"
+   ============================================ */
 
 .about {
     position: relative;
-    padding-top: 100px !important;
+    padding-top: 100px !important; /* Spazio sopra per la linea */
 }
 
 .about::before {
@@ -4586,79 +4751,93 @@ html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 80%; /* Lunghezza della linea */
     max-width: 1200px;
-    height: 10px;
+    height: 10px; /* Leggermente più spessa per visibilità */
     border-radius: 3px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 30%,
-        var(--accent) 70%,
+    
+    /* Gradiente sfumato blu-arancione per coerenza con il sito */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-blue) 30%, 
+        var(--accent) 70%, 
         transparent 100%
     );
     opacity: 0.7;
     z-index: 1;
 }
 
+/* Responsive: Su mobile la linea è più corta */
 @media (max-width: 768px) {
     .about {
         padding-top: 80px !important;
     }
+    
     .about::before {
         width: 90%;
         height: 2px;
     }
 }
+/* ============================================
+   LINEA SPESSA 10PX PRIMA DELLE STATS NELLA HERO
+   ============================================ */
 
 .hero-iso .hero-stats {
     position: relative;
-    margin-top: 50px !important;
-    padding-top: 30px !important;
+    margin-top: 50px !important; /* Spazio sopra la linea */
+    padding-top: 30px !important; /* Spazio tra la linea e i numeri */
 }
 
+/* La linea spessa 10px */
 .hero-iso .hero-stats::before {
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 80%; /* Lunghezza della linea */
     max-width: 1000px;
-    height: 10px;
-    border-radius: 5px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 30%,
-        var(--accent) 70%,
+    height: 10px; /* SPESSORE RICHIESTO */
+    border-radius: 5px; /* Angoli arrotondati per morbidezza */
+    
+    /* Gradiente sfumato blu-arancione per coerenza con il sito */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-blue) 30%, 
+        var(--accent) 70%, 
         transparent 100%
     );
     opacity: 0.8;
     z-index: 1;
 }
 
+/* Responsive: Su mobile la linea è più corta ma mantiene lo spessore */
 @media (max-width: 768px) {
     .hero-iso .hero-stats {
         margin-top: 30px !important;
         padding-top: 20px !important;
     }
+    
     .hero-iso .hero-stats::before {
         width: 90%;
-        height: 8px;
+        height: 8px; /* Leggermente più sottile su mobile per non essere invasiva */
     }
 }
-
 /* ============================================
-   SFONDO GLOBALE INDEX - VERDE
+   SFONDO GLOBALE INDEX - Coordinato con l'Hero
    ============================================ */
+
+/* 1. Sfondo Base per tutto il Body (Versione Chiara della Hero) */
 body {
-    background-color: #f0fdf4;
-    background-image:
-    linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
-    background-size: 60px 60px;
+    background-color: #f0f9ff; /* Azzurro chiarissimo base */
+    background-image: 
+        linear-gradient(rgba(30, 64, 175, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 64, 175, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px; /* Griglia sottile come nella Hero ma più chiara */
     position: relative;
 }
 
+/* Forme decorative globali (cerchi sfumati molto leggeri) */
 body::before {
     content: '';
     position: fixed;
@@ -4666,19 +4845,21 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background:
-    radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(52, 211, 153, 0.05) 0%, transparent 40%);
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 40%);
     pointer-events: none;
     z-index: -1;
 }
 
+/* 2. Hero Section - Mantiene il suo sfondo scuro originale */
 .hero-iso {
-    background: linear-gradient(135deg, #10b981 0%, #34d399 30%, #6ee7b7 70%, #a7f3d0 100%) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 30%, #2563eb 70%, #3b82f6 100%) !important;
     position: relative;
     overflow: hidden;
 }
 
+/* Grid pattern specifica per la Hero (più visibile) */
 .hero-iso::before {
     content: '';
     position: absolute;
@@ -4686,33 +4867,37 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:
-    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
     background-size: 80px 80px;
     pointer-events: none;
     z-index: 0;
 }
 
+/* 3. Sezione Chi Siamo - Sfondo bianco semitrasparente per staccare */
 .about {
     background: rgba(255, 255, 255, 0.8) !important;
     backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(16, 185, 129, 0.1);
-    border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+    border-top: 1px solid rgba(30, 64, 175, 0.1);
+    border-bottom: 1px solid rgba(30, 64, 175, 0.1);
 }
 
+/* 4. Sezione Servizi - Leggermente più scura per creare ritmo */
 .services {
-    background: linear-gradient(180deg, #d1fae5 0%, #a7f3d0 100%) !important;
+    background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 100%) !important;
     position: relative;
 }
 
+/* 5. Sezione Perché Sceglierci - Sfondo Scuro Coordinato con la Hero */
 .why-us {
-    background: linear-gradient(135deg, #064e3b 0%, #10b981 100%) !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%) !important;
     color: white;
     position: relative;
     overflow: hidden;
 }
 
+/* Grid pattern per la sezione scura */
 .why-us::before {
     content: '';
     position: absolute;
@@ -4720,1273 +4905,28 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
     background-size: 80px 80px;
     pointer-events: none;
     z-index: 0;
 }
 
+/* Assicura che il contenuto sia sopra lo sfondo */
 .why-us .container {
     position: relative;
     z-index: 1;
 }
 
+/* 6. Sezione Contatti - Torna allo sfondo chiaro globale */
 .cta-form-section {
     background: rgba(255, 255, 255, 0.9) !important;
     backdrop-filter: blur(10px);
 }
 
+/* 7. Footer - Scuro coordinato */
 footer {
-    background: #064e3b !important;
+    background: #0f172a !important;
     color: white;
 }
-
-/* ============================================
-   ANIMAZIONI DI ENTRATA - FADE IN UP
-   ============================================ */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.delay-100 { transition-delay: 0.1s; }
-.delay-200 { transition-delay: 0.2s; }
-.delay-300 { transition-delay: 0.3s; }
-.delay-400 { transition-delay: 0.4s; }
-.delay-500 { transition-delay: 0.5s; }
-
-@media (prefers-reduced-motion: reduce) {
-    .animate-on-scroll {
-        transition: none;
-        opacity: 1;
-        transform: none;
-    }
-}
-
-/* ============================================
-   STILE "STRATEGICA" - VERDE, CORSIVO, SOTTOLINEATO
-   ============================================ */
-.highlight-strategica {
-    color: #10b981 !important;
-    font-style: italic !important;
-    font-weight: 900 !important;
-    position: relative;
-    display: inline-block;
-    text-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
-}
-
-.highlight-strategica::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(90deg,
-        rgba(16, 185, 129, 0.8) 0%,
-        rgba(16, 185, 129, 0.6) 50%,
-        rgba(16, 185, 129, 0.2) 100%
-    );
-    filter: blur(2px);
-    border-radius: 4px;
-    opacity: 1;
-    transform-origin: left;
-    animation: underlineGrow 1s ease-out 1s forwards;
-    transform: scaleX(0);
-}
-
-@keyframes underlineGrow {
-    to { transform: scaleX(1); }
-}
-
-@media (max-width: 768px) {
-    .highlight-strategica::after {
-        bottom: -5px;
-        height: 6px;
-        filter: blur(1px);
-    }
-}
-
-/* ============================================
-   TITOLO CON ANIMAZIONE FADEINDOWN
-   ============================================ */
-.hero-title {
-    font-size: 4.5rem;
-    font-weight: 900;
-    color: white;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    animation: fadeInDown 1s ease-out 0.3s forwards;
-    opacity: 0;
-}
-
-.title-line {
-    display: inline-block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.title-line.highlight {
-    color: #10b981;
-    font-style: italic;
-    position: relative;
-}
-
-.title-line.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(90deg, #10b981, transparent);
-    border-radius: 3px;
-    animation: underlineGrow 0.8s ease-out 1s forwards;
-    transform-origin: left;
-    transform: scaleX(0);
-}
-
-@keyframes underlineGrow {
-    to { transform: scaleX(1); }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-subtitle {
-    font-size: 1.4rem;
-    color: rgba(255,255,255,0.9);
-    line-height: 1.8;
-    margin-bottom: 40px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    animation: fadeInDown 1s ease-out 1s forwards;
-}
-
-/* ============================================
-   ANIMAZIONI SCROLL - FADE IN UP
-   ============================================ */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.delay-100 { transition-delay: 0.1s; }
-.delay-200 { transition-delay: 0.2s; }
-.delay-300 { transition-delay: 0.3s; }
-.delay-400 { transition-delay: 0.4s; }
-.delay-500 { transition-delay: 0.5s; }
-.delay-600 { transition-delay: 0.6s; }
-.delay-700 { transition-delay: 0.7s; }
-.delay-800 { transition-delay: 0.8s; }
-
-@media (prefers-reduced-motion: reduce) {
-    .animate-on-scroll {
-        transition: none;
-        opacity: 1;
-        transform: none;
-    }
-}
-
-/* ============================================
-   LINEE DIVISORIE 10PX - SERVIZI, PERCHÉ NOI, CONTATTI
-   ============================================ */
-.services {
-    position: relative;
-    padding-top: 100px !important;
-}
-
-.services::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
-    height: 10px !important;
-    border-radius: 5px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 20%,
-        var(--accent) 80%,
-        transparent 100%
-    ) !important;
-    opacity: 0.7;
-    z-index: 1;
-}
-
-.why-us {
-    position: relative;
-    padding-top: 100px !important;
-}
-
-.why-us::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
-    height: 10px !important;
-    border-radius: 5px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 20%,
-        var(--accent) 80%,
-        transparent 100%
-    ) !important;
-    opacity: 0.7;
-    z-index: 1;
-}
-
-.cta-form-section {
-    position: relative;
-    padding-top: 100px !important;
-}
-
-.cta-form-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
-    height: 10px !important;
-    border-radius: 5px;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 20%,
-        var(--accent) 80%,
-        transparent 100%
-    ) !important;
-    opacity: 0.7;
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .services::before,
-    .why-us::before,
-    .cta-form-section::before {
-        height: 6px !important;
-        border-radius: 3px;
-        width: 90%;
-    }
-    .services,
-    .why-us,
-    .cta-form-section {
-        padding-top: 80px !important;
-    }
-}
-
-/* ============================================
-   LINEA DIVISORIA - SEZIONE CONTATTI
-   ============================================ */
-.contact {
-    position: relative;
-    padding-top: 100px !important;
-}
-
-.contact::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
-    height: 10px !important;
-    border-radius: 5px !important;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 20%,
-        var(--accent) 80%,
-        transparent 100%
-    ) !important;
-    opacity: 0.7 !important;
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .contact::before {
-        height: 6px !important;
-        border-radius: 3px !important;
-        width: 90%;
-    }
-    .contact {
-        padding-top: 80px !important;
-    }
-}
-
-/* ============================================
-   LINEA DIVISORIA SOPRA IL FOOTER
-   ============================================ */
-footer {
-    position: relative;
-    padding-top: 100px !important;
-}
-
-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
-    height: 10px !important;
-    border-radius: 5px !important;
-    background: linear-gradient(90deg,
-        transparent 0%,
-        var(--primary-blue) 20%,
-        var(--accent) 80%,
-        transparent 100%
-    ) !important;
-    opacity: 0.7 !important;
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    footer::before {
-        height: 6px !important;
-        border-radius: 3px !important;
-        width: 90%;
-    }
-    footer {
-        padding-top: 80px !important;
-    }
-}
-
-/* ============================================
-   SOTTOLINEATURA GIALLA "STRATEGICA" - ESTESA
-   ============================================ */
-.intro-card h3,
-.service-content h3,
-.section-title,
-.section-tag {
-    position: relative;
-    display: inline-block;
-}
-
-.intro-card h3::after,
-.service-content h3::after,
-.section-title::after,
-.section-tag::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(90deg, #10b981 0%, #6ee7b7 60%, transparent 100%);
-    border-radius: 4px;
-    opacity: 0.95;
-    transition: width 0.3s ease;
-}
-
-.intro-card h3:hover::after,
-.service-content h3:hover::after,
-.section-title:hover::after,
-.section-tag:hover::after {
-    width: 105%;
-}
-
-/* ============================================
-   RIMUOVI SOTTOLINEATURA DA "SOLUZIONI COMPLETE..."
-   ============================================ */
-.services .section-title::after,
-.services .section-subtitle::after,
-.services p::after {
-    display: none !important;
-    content: none !important;
-    background: none !important;
-}
-
-.services .highlight-strategica::after {
-    display: none !important;
-}
-/* ============================================
-   FIX VISIBILITÀ: "Certificazioni ISO" e "Cybersecurity"
-   Colore: Giallo Dorato / Arancione Chiaro per massimo contrasto su Verde
-   ============================================ */
-
-/* Target specifico per le righe del titolo Hero */
-.hero-title .title-line:nth-child(2), 
-.hero-title .title-line:nth-child(3) {
-    color: #d97706 !important; /* Giallo Dorato scuro (Amber 600) - Ottimo contrasto */
-    font-weight: 800 !important;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4); /* Leggera ombra bianca per staccare dallo sfondo */
-}
-
-/* Se usi la classe .highlight-strategica anche lì, forziamo il colore */
-.highlight-strategica {
-    color: #d97706 !important;
-}
-
-/* Sottolineatura coordinata in Giallo Dorato */
-.hero-title .title-line:nth-child(2)::after,
-.hero-title .title-line:nth-child(3)::after,
-.highlight-strategica::after {
-    background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 60%, transparent 100%) !important;
-    opacity: 0.9;
-}
-/* ============================================
-   BADGE DOT - Colore Giallo Dorato / Arancione Chiaro
-   ============================================ */
-
-.hero-badge .badge-dot {
-    background-color: #f59e0b !important; /* Giallo Dorato richiesto */
-    box-shadow: 0 0 12px rgba(245, 158, 11, 0.6) !important; /* Glow coordinato */
-}
-
-/* Animazione pulse mantenuta ma con il nuovo colore */
-@keyframes pulse {
-    0% { transform: scale(0.95); opacity: 0.7; }
-    50% { transform: scale(1.15); opacity: 1; }
-    100% { transform: scale(0.95); opacity: 0.7; }
-}
-/* ============================================
-   MENU NAVIGAZIONE - Linea Giallo Dorato/Arancione
-   ============================================ */
-
-/* Modifica la linea ::before dei link del menu */
-.nav-links a::before {
-    /* Cambia da blu ad arancione/dorato */
-    background: linear-gradient(90deg, #f59e0b, #d97706) !important;
-    box-shadow: 0 2px 10px rgba(245, 158, 11, 0.4) !important; /* Ombra dorata */
-}
-
-/* Opzionale: Se vuoi che anche il testo diventi arancione all'hover */
-.nav-links a:hover {
-    color: #d97706 !important;
-}
-/* ============================================
-   HEADER LOGO HOVER - Sfondo Arancione/Giallo
-   ============================================ */
-
-/* Quando passi il mouse sul contenitore del logo (.header-brand) */
-.header-brand:hover {
-    /* Cambia lo sfondo in Arancione/Giallo pieno */
-    background: #f59e0b !important;
-    
-    /* Rende il bordo trasparente per fondersi con lo sfondo */
-    border-color: transparent !important;
-    
-    /* Mantiene l'animazione di sollevamento */
-    transform: translateY(-3px) scale(1.02);
-    
-    /* Ombra coordinata col nuovo colore */
-    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
-}
-
-/* Opzionale: Se vuoi che anche il testo "CSQ Service" diventi bianco per contrasto */
-.header-brand:hover .header-brand-text {
-    color: white !important;
-    -webkit-text-fill-color: white !important; /* Forza il bianco se c'è un gradiente */
-}
-
-/* Opzionale: Se vuoi che la parte "Service" (span) rimanga bianca o cambi leggermente */
-.header-brand:hover .header-brand-text span {
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-}
-/* ============================================
-   BOTTONI HERO - Colori Coordinati Tema Verde
-   ============================================ */
-
-/* 1. Pulsante Primario: "Richiedi Consulenza Gratuita" 
-   Stesso colore Giallo Dorato di ISO/Cybersecurity, ma con testo scuro per leggibilità */
-.btn-primary {
-    background: #f59e0b !important; /* Giallo Dorato */
-    color: #ffffff !important;      /* Testo Bianco per contrasto */
-    border: 2px solid #f59e0b !important;
-    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4) !important;
-}
-
-.btn-primary:hover {
-    background: #d97706 !important; /* Arancione leggermente più scuro all'hover */
-    border-color: #d97706 !important;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(245, 158, 11, 0.5) !important;
-}
-
-/* 2. Pulsante Secondario: "Esplora i Servizi" 
-   Colore Verde Scuro/Elegante, visibile e professionale */
-.btn-secondary {
-    background: transparent !important;
-    color: #064e3b !important;      /* Verde Scuro (Forest Green) */
-    border: 2px solid #064e3b !important;
-}
-
-.btn-secondary:hover {
-    background: #064e3b !important; /* Sfondo diventa verde scuro */
-    color: #ffffff !important;      /* Testo diventa bianco */
-    border-color: #064e3b !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(6, 78, 59, 0.3) !important;
-}
-
-/* Se i bottoni sono nella Hero con sfondo scuro/blu, aggiusta i colori per quel contesto specifico */
-.hero-iso .btn-secondary {
-    color: #ffffff !important;
-    border-color: rgba(255, 255, 255, 0.5) !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-}
-
-.hero-iso .btn-secondary:hover {
-    background: #ffffff !important;
-    color: #064e3b !important;
-    border-color: #ffffff !important;
-}
-/* ============================================
-   STATISTICHE HERO - Colori Ottimizzati per Sfondo Verde Chiaro
-   ============================================ */
-
-/* 1. Numeri Giganti: Giallo Dorato Arancione (#f59e0b) 
-   Spicca benissimo sul verde chiaro e richiama l'accento del sito */
-.hero-iso .stat-num {
-    color: #f59e0b !important; /* Giallo Dorato */
-    text-shadow: 0 2px 4px rgba(245, 158, 11, 0.2); /* Leggera ombra per profondità */
-}
-
-/* 2. Testo Descrittivo: Verde Scuro/Teal (#065f46) 
-   Contrasto elevato col verde chiaro, molto elegante e professionale */
-.hero-iso .stat-label {
-    color: #065f46 !important; /* Verde Foresta/Teal Scuro */
-    font-weight: 700 !important;
-    letter-spacing: 0.5px;
-}
-
-/* 3. Linee Divisorie tra le stats: Verde Medio (#10b981) 
-   Per non staccare troppo dal tema generale */
-.hero-iso .hero-stat-divider {
-    background: #10b981 !important; /* Verde Smeraldo */
-    opacity: 0.6;
-}
-/* ============================================
-   NUOVO TEMA: VERDE SCURO PROFESSIONALE (#047857)
-   ============================================ */
-
-/* 1. Aggiornamento Variabili Colori - Toni più scuri e profondi */
-:root {
-    --primary-dark: #064e3b;       /* Verde Foresta Molto Scuro */
-    --primary-blue: #047857;       /* Verde Smeraldo Intenso (Nuovo Primario) */
-    --primary-light: #10b981;      /* Verde Smeraldo Chiaro (Accent) */
-    --accent: #f59e0b;             /* Arancione/Dorato (Mantenuto per contrasto) */
-    --accent-light: #fbbf24;       /* Giallo Dorato */
-    
-    --bg-fresh: #ecfdf5;           /* Sfondo Verde Chiarissimo (Mint) */
-    --white: #ffffff;
-    
-    --text-dark: #064e3b;          /* Testo Verde Scuro */
-    --text-gray: #374151;          /* Grigio Scuro */
-    
-    --shadow-green: rgba(4, 120, 87, 0.25); /* Ombra Verde Intensa */
-}
-
-/* 2. Sfondo Generale e Testo */
-body {
-    background-color: var(--bg-fresh); /* Sfondo mint molto leggero */
-    color: var(--text-dark);
-}
-
-h1, h2, h3, h4 {
-    color: var(--primary-dark); /* Titoli in verde foresta */
-}
-
-p {
-    color: var(--text-gray);
-}
-
-/* 3. Header & Navigazione */
-header {
-    background: rgba(255, 255, 255, 0.98);
-    border-bottom: 1px solid var(--primary-light);
-}
-
-.header-brand-text {
-    color: var(--primary-dark);
-}
-
-.nav-links a:hover {
-    color: var(--primary-blue);
-}
-
-.nav-cta {
-    background: var(--primary-blue);
-    color: white !important;
-}
-.nav-cta:hover {
-    background: var(--primary-dark);
-    box-shadow: 0 10px 25px var(--shadow-green);
-}
-
-/* 4. Hero Section - Gradiente Verde Scuro Elegante */
-.hero-iso {
-    /* Gradiente da Verde Scuro a Verde Smeraldo */
-    background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #10b981 100%) !important;
-    color: var(--white);
-}
-
-/* Testo Hero Bianco per contrasto massimo */
-.hero-title, .hero-subtitle, .stat-num, .stat-label, .hero-badge {
-    color: white !important;
-}
-
-/* Badge "Partner..." - Adattato allo sfondo scuro */
-.hero-badge {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    color: white !important;
-}
-
-.badge-dot {
-    background: #fbbf24 !important; /* Pallino giallo per spiccare sul verde scuro */
-    box-shadow: 0 0 10px rgba(251, 191, 36, 0.6) !important;
-}
-
-/* Parole Chiave "ISO" e "Cybersecurity" - Manteniamo l'Arancione/Giallo per contrasto */
-.title-line.highlight,
-.highlight-strategica {
-    color: #fbbf24 !important; /* Giallo chiaro su sfondo verde scuro è leggibilissimo */
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.title-line.highlight::after,
-.highlight-strategica::after {
-    background: linear-gradient(90deg, #fbbf24 0%, transparent 100%) !important;
-}
-
-/* Bottoni Hero */
-.btn-primary {
-    background: #fbbf24; /* Bottone Giallo/Dorato su sfondo verde scuro */
-    color: #064e3b;      /* Testo verde scuro */
-    border: none;
-    box-shadow: 0 10px 30px rgba(251, 191, 36, 0.4);
-}
-.btn-primary:hover {
-    background: #f59e0b;
-    transform: translateY(-3px);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: white;
-    border: 2px solid rgba(255,255,255,0.5);
-}
-.btn-secondary:hover {
-    background: rgba(255,255,255,0.1);
-    border-color: white;
-}
-
-/* Statistiche */
-.stat-num {
-    color: #fbbf24 !important; /* Numeri gialli */
-}
-.stat-label {
-    color: rgba(255,255,255,0.9) !important;
-}
-.hero-stat-divider {
-    background: rgba(255,255,255,0.3) !important;
-}
-
-/* 5. Sezioni Intermedie (Chi Siamo, Servizi) */
-.about {
-    background: var(--white); /* Sfondo bianco pulito per staccare dalla hero scura */
-}
-
-.intro-card, .service-card, .why-card {
-    background: var(--white);
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.intro-card h3, .service-content h3, .why-card h3 {
-    color: var(--primary-dark);
-}
-
-/* 6. Linee Divisorie (Gradienti Verdi Scuri) */
-.services::before, .why-us::before, .contact::before, footer::before,
-.about::before, .hero-iso .hero-stats::before {
-    background: linear-gradient(90deg, transparent 0%, var(--primary-blue) 50%, transparent 100%) !important;
-}
-
-/* 7. Footer - Verde Foresta Molto Scuro */
-footer {
-    background: var(--primary-dark);
-    color: white;
-}
-footer h4 {
-    color: var(--primary-light);
-}
-footer a:hover {
-    color: var(--primary-light);
-}
-
-/* 8. Form Contatti */
-.contact-wrapper {
-    box-shadow: 0 25px 70px rgba(4, 120, 87, 0.15);
-    border: 1px solid #e5e7eb;
-}
-.contact-info {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
-}
-.btn-submit {
-    background: var(--primary-blue);
-    color: white;
-}
-.btn-submit:hover {
-    background: var(--primary-dark);
-}
-
-/* 9. Animazioni e Dettagli */
-.service-card:hover {
-    border-color: var(--primary-blue);
-    box-shadow: 0 15px 40px var(--shadow-green);
-}
-/* ============================================
-   FIX VISIBILITÀ: ISO e Cybersecurity - GIALLO CHIARO LUMINOSO
-   ============================================ */
-
-/* Target specifico per le righe del titolo Hero (2a e 3a linea) */
-.hero-title .title-line:nth-child(2), 
-.hero-title .title-line:nth-child(3) {
-    color: #fbbf24 !important; /* Giallo Dorato Chiaro (Amber 400) - Più luminoso */
-    font-weight: 800 !important;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); /* Ombra leggermente più intensa per staccare dallo sfondo */
-}
-
-/* Se usi la classe .highlight-strategica anche lì, forziamo lo stesso colore chiaro */
-.highlight-strategica {
-    color: #fbbf24 !important;
-}
-
-/* Sottolineatura coordinata in Giallo Chiaro con sfumatura */
-.hero-title .title-line:nth-child(2)::after,
-.hero-title .title-line:nth-child(3)::after,
-.highlight-strategica::after {
-    background: linear-gradient(90deg, #fbbf24 0%, #fcd34d 60%, transparent 100%) !important;
-    opacity: 0.95;
-}
-/* ============================================
-   STATISTICHE HERO - Stile "Strategica"
-   ============================================ */
-
-/* 1. Numeri Giganti (500+, 98%, ecc.) */
-.hero-iso .stat-num {
-    color: #fbbf24 !important; /* Giallo Dorato Chiaro */
-    font-style: italic !important; /* Corsivo come "Strategica" */
-    font-weight: 900 !important;
-    position: relative;
-    display: inline-block;
-    text-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
-}
-
-/* Sottolineatura sfumata sotto i numeri */
-.hero-iso .stat-num::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 6px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        #fbbf24 50%, 
-        transparent 100%
-    );
-    filter: blur(2px);
-    border-radius: 4px;
-    opacity: 0.8;
-}
-
-/* 2. Etichette (Aziende Certificate, ecc.) - Mantenute leggibili ma coordinate */
-.hero-iso .stat-label {
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.5px;
-}
-
-/* ============================================
-   PULSANTE "RICHIEDI CONSULENZA GRATUITA" - Stile "Strategica"
-   ============================================ */
-
-.btn-primary {
-    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%) !important; /* Gradiente Arancione-Giallo */
-    color: #ffffff !important;
-    font-style: italic !important; /* Corsivo */
-    font-weight: 800 !important;
-    border: none !important;
-    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4) !important;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Effetto hover più luminoso */
-.btn-primary:hover {
-    background: linear-gradient(135deg, #fbbf24 0%, #fcd34d 100%) !important;
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(251, 191, 36, 0.5) !important;
-}
-
-/* Piccola sottolineatura interna al bottone per richiamare lo stile */
-.btn-primary::after {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 20%;
-    width: 60%;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 2px;
-    filter: blur(1px);
-}
-/* ============================================
-   HERO SUBTITLE - Stile Elegante e Leggibile
-   ============================================ */
-
-.hero-subtitle {
-    /* Tipografia */
-    font-size: 1.35rem !important;       /* Dimensione equilibrata (né troppo grande né piccola) */
-    line-height: 1.8 !important;         /* Interlinea ampia per massima leggibilità */
-    font-weight: 400 !important;         /* Peso normale per eleganza */
-    
-    /* Colore */
-    color: rgba(255, 255, 255, 0.95) !important; /* Bianco quasi puro, leggermente morbido */
-    
-    /* Layout */
-    max-width: 900px !important;         /* Limita la larghezza per evitare righe infinite */
-    margin-left: auto !important;        /* Centra orizzontalmente */
-    margin-right: auto !important;
-    margin-top: 15px !important;         /* Spazio dal titolo sopra */
-    margin-bottom: 45px !important;      /* Spazio generoso prima dei bottoni */
-    
-    /* Allineamento */
-    text-align: center !important;
-    
-    /* Effetto visivo leggero */
-    letter-spacing: 0.3px;               /* Leggera spaziatura tra le lettere */
-}
-
-/* Responsive: Su mobile si adatta meglio */
-@media (max-width: 768px) {
-    .hero-subtitle {
-        font-size: 1.1rem !important;    /* Leggermente più piccolo su mobile */
-        line-height: 1.6 !important;     /* Interlinea leggermente ridotta */
-        padding: 0 20px !important;      /* Padding laterale per non attaccare ai bordi */
-        margin-bottom: 35px !important;
-    }
-}
-/* ============================================
-   HEADER LOGO HOVER - Sfondo Verde Smeraldo
-   ============================================ */
-
-/* Quando passi il mouse sul contenitore del logo (.header-brand) */
-.header-brand:hover {
-    /* Cambia lo sfondo in Verde Smeraldo brillante */
-    background: #10b981 !important;
-    
-    /* Rende il bordo trasparente per fondersi con lo sfondo */
-    border-color: transparent !important;
-    
-    /* Mantiene l'animazione di sollevamento */
-    transform: translateY(-3px) scale(1.02);
-    
-    /* Ombra coordinata col nuovo colore verde */
-    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
-}
-
-/* Opzionale: Se vuoi che anche il testo "CSQ Service" diventi bianco per contrasto */
-.header-brand:hover .header-brand-text {
-    color: white !important;
-    -webkit-text-fill-color: white !important; /* Forza il bianco se c'è un gradiente */
-}
-
-/* Opzionale: Se vuoi che la parte "Service" (span) rimanga bianca o cambi leggermente */
-.header-brand:hover .header-brand-text span {
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-}
-/* ============================================
-   CONTATTACI HEADER - Fix definitivo testo bianco
-   ============================================ */
-
-.nav-cta {
-    background: linear-gradient(135deg, #f59e0b, #fbbf24) !important;
-    color: #ffffff !important;
-    padding: 12px 28px !important;
-    border-radius: 50px !important;
-    font-weight: 700 !important;
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4) !important;
-    transition: all 0.4s ease !important;
-    border: 2px solid #f59e0b !important;
-    letter-spacing: 0.3px;
-}
-
-/* HOVER - Verde scuro + Testo BIANCO FORZATO */
-.nav-cta:hover {
-    background: #0f766e !important;
-    color: #ffffff !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 12px 30px rgba(15, 118, 110, 0.55) !important;
-    border-color: #0f766e !important;
-}
-
-/* FORZA BIANCO SU TUTTI GLI STATI (super importante) */
-.nav-cta,
-.nav-cta:link,
-.nav-cta:visited,
-.nav-cta:hover,
-.nav-cta:active,
-.nav-cta:focus {
-    color: #ffffff !important;
-}
-
-/* Ultra-specifico per override */
-.nav-links .nav-cta:hover {
-    color: #ffffff !important;
-}
-
-/* Effetto shine */
-.nav-cta {
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-cta::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 40%;
-    height: 300%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.5),
-        transparent
-    );
-    transform: skewX(-25deg);
-    transition: left 0.7s ease;
-}
-
-.nav-cta:hover::after {
-    left: 150%;
-}
-/* ============================================
-   BOTTONE "ESPLORA I SERVIZI" - Sfondo bianco → trasparente al hover
-   ============================================ */
-
-.btn-secondary {
-    background: #ffffff !important;
-    color: #0f766e !important;           /* Verde scuro elegante */
-    padding: 16px 35px !important;
-    border-radius: 50px !important;
-    border: 2px solid #0f766e !important;
-    font-weight: 700 !important;
-    transition: all 0.4s ease !important;
-    box-shadow: 0 8px 20px rgba(15, 118, 110, 0.15) !important;
-}
-
-.btn-secondary:hover {
-    background: transparent !important;
-    color: #ffffff !important;
-    border-color: #ffffff !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 12px 30px rgba(255,255,255,0.2) !important;
-}
-
-/* Fix per quando è nella Hero (sfondo scuro) */
-.hero-iso .btn-secondary {
-    background: rgba(255,255,255,0.95) !important;
-    color: #0f766e !important;
-    border-color: #0f766e !important;
-}
-
-.hero-iso .btn-secondary:hover {
-    background: transparent !important;
-    color: #ffffff !important;
-    border-color: #ffffff !important;
-    box-shadow: 0 12px 35px rgba(255,255,255,0.3) !important;
-}
-/* ============================================
-   BOTTONE "RICHIEDI CONSULENZA GRATUITA" - Più tondo
-   ============================================ */
-
-.btn-primary {
-    background: linear-gradient(135deg, #f59e0b, #fbbf24) !important;
-    color: #ffffff !important;
-    padding: 16px 35px !important;
-    border-radius: 50px !important;           /* Molto tondo come richiesto */
-    border: 2px solid #f59e0b !important;
-    font-weight: 700 !important;
-    transition: all 0.4s ease !important;
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4) !important;
-    letter-spacing: 0.4px;
-}
-
-.btn-primary:hover {
-    background: linear-gradient(135deg, #d97706, #f59e0b) !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5) !important;
-    border-color: #d97706 !important;
-}
-
-/* Effetto shine */
-.btn-primary {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-primary::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 40%;
-    height: 300%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.45),
-        transparent
-    );
-    transform: skewX(-25deg);
-    transition: left 0.7s ease;
-}
-
-.btn-primary:hover::after {
-    left: 150%;
-}
-.hero-subtitle {
-    font-size: 1.4rem !important;
-    line-height: 1.8 !important;
-    font-weight: 400 !important;
-    color: rgba(255, 255, 255, 0.92) !important;
-    max-width: 850px !important;
-    margin: 0 auto 50px auto !important;
-    text-align: center !important;
-    letter-spacing: 0.015em !important;
-    text-shadow: 
-        0 2px 8px rgba(0,0,0,0.3),
-        0 4px 20px rgba(0,0,0,0.2) !important;
-}
-/* ============================================
-   STRISCE MULTICOLORE - All'INIZIO di ogni sezione
-   ============================================ */
-
-/* 1. HEADER - Striscia sia all'inizio che alla fine */
-header::before,
-header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(90deg, 
-        #f59e0b 0%, 
-        #fbbf24 20%, 
-        #10b981 40%, 
-        #0f766e 60%, 
-        #065f46 80%, 
-        #f59e0b 100%);
-    z-index: 15;
-}
-
-header::before {
-    top: 0;
-}
-
-header::after {
-    bottom: 0;
-}
-
-/* 2. Striscia all'INIZIO di ogni sezione principale */
-.hero-iso::before,
-.about::before,
-.services::before,
-.why-us::before,
-.contact::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1400px;
-    height: 6px;
-    background: linear-gradient(90deg, 
-        #f59e0b 0%, 
-        #fbbf24 20%, 
-        #10b981 40%, 
-        #0f766e 60%, 
-        #065f46 80%, 
-        #f59e0b 100%);
-    border-radius: 50px;
-    z-index: 3;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-/* 3. Miglioramento per la Hero (sfondo scuro) */
-.hero-iso::before {
-    width: 100%;
-    max-width: none;
-    border-radius: 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Regolazioni Mobile */
-@media (max-width: 768px) {
-    header::before,
-    header::after,
-    .hero-iso::before,
-    .about::before,
-    .services::before,
-    .why-us::before,
-    .contact::before {
-        height: 4px;
-    }
-}
-/* ============================================
-   MODIFICA GRAFICA: ANGOLI ARROTONDATI SECONDA IMMAGINE
-   ============================================ */
-.about-secondary-image img {
-    border-radius: 20px !important;
-    box-shadow: 0 25px 50px rgba(16, 185, 129, 0.15) !important;
-    object-fit: cover; /* Evita che l'immagine si distorca mentre si adatta */
-}
-/* ============================================
-   MODIFICA GRAFICA: EFFETTI E ANIMAZIONI FLUIDE
-   ============================================ */
-
-/* 1. EFFETTO DI HOVER SUI BOTTONI (Effetto Micro-Pulsazione) */
-.cta-button, .nav-cta, .btn-cookie {
-    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease !important;
-}
-.cta-button:hover, .nav-cta:hover, .btn-cookie:hover {
-    transform: translateY(-3px) scale(1.02) !important;
-    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2) !important;
-}
-.cta-button:active, .nav-cta:active, .btn-cookie:active {
-    transform: translateY(-1px) scale(0.98) !important;
-}
-
-/* 2. EFFETTO FLUIDO SULLE CARD E SULLE IMMAGINI */
-.service-card, .feature-item, .intro-card, .why-card, .about-image img, .about-secondary-image img {
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-}
-.service-card:hover, .feature-item:hover, .intro-card:hover, .why-card:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12) !important;
-}
-
-/* 3. ANIMAZIONE DELLE IMMAGINI IN HOVER (Leggero sollevamento e zoom) */
-.about-image img:hover, .about-secondary-image img:hover {
-    transform: scale(1.02) translateY(-4px) !important;
-    box-shadow: 0 30px 60px rgba(16, 185, 129, 0.25) !important;
-}
-
-/* 4. ANIMAZIONE ALL'APERTURA DEL SITO (Entrata della Hero Section) */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.hero-content {
-    animation: fadeInUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-.hero-image {
-    animation: fadeInUp 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-/* ============================================
-   MODIFICA GRAFICA: ANIMAZIONI AL CONTROLLO DELLO SCROLL
-   ============================================ */
-
-/* Stato iniziale degli elementi prima che appaiano (invisibili e leggermente abbassati) */
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), 
-                transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-/* Stato finale attivato dal JavaScript quando si fa lo scroll */
-.animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* OPZIONALE: Ritardi (Delay) per animare gli elementi in sequenza (effetto cascata) */
-.delay-1 { transition-delay: 0.15s; }
-.delay-2 { transition-delay: 0.3s; }
-.delay-3 { transition-delay: 0.45s; }
-/* ============================================
-   MODIFICA GRAFICA: ANIMAZIONI AL CONTROLLO DELLO SCROLL
-   ============================================ */
-
-/* Stato iniziale generale degli elementi (invisibili e spostati in basso) */
-.animate-on-scroll {
-    opacity: 0 !important;
-    transform: translateY(40px) !important;
-    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), 
-                transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-}
-
-/* Stato finale attivato dal JavaScript quando l'elemento entra nella schermata */
-.animate-on-scroll.is-visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-/* --- EFFETTO A CASCATA PER LE CARD E ELEMENTI MULTIPLI --- */
-
-/* Applica il ritardo progressivo automatico alle card dei servizi */
-.services-grid .service-card:nth-child(1) { transition-delay: 0.1s; }
-.services-grid .service-card:nth-child(2) { transition-delay: 0.25s; }
-.services-grid .service-card:nth-child(3) { transition-delay: 0.4s; }
-.services-grid .service-card:nth-child(4) { transition-delay: 0.55s; }
-
-/* Applica il ritardo progressivo automatico ai box dei vantaggi (Why Us) */
-.why-us-grid .why-card:nth-child(1) { transition-delay: 0.1s; }
-.why-us-grid .why-card:nth-child(2) { transition-delay: 0.25s; }
-.why-us-grid .why-card:nth-child(3) { transition-delay: 0.4s; }
-
-/* Applica il ritardo progressivo automatico alle micro-card della sezione Chi Siamo */
-.about-intro-grid .intro-card:nth-child(1) { transition-delay: 0.1s; }
-.about-intro-grid .intro-card:nth-child(2) { transition-delay: 0.3s; }
